@@ -32,7 +32,7 @@ namespace Pre_maritalCounSeling.Blazor.API.Controllers
         {
             try
             {
-                var _apiKey = "No haha";
+                var _apiKey = "Nasdasidasijdasijd";
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _apiKey);
 
                 var requestBody = new
