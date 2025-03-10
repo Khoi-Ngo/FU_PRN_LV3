@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

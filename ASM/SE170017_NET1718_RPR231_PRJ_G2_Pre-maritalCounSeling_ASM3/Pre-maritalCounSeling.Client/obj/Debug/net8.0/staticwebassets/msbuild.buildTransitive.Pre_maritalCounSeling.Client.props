@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Pre_maritalCounSeling.Client.props" />
+</Project>

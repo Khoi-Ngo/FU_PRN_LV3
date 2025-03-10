@@ -1,0 +1,101 @@
+﻿<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #f4f4f9;
+    }
+
+    .navbar {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        padding: 15px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .sidebar {
+        width: 250px;
+        background: #2c3e50;
+        color: white;
+        height: 100vh;
+        padding-top: 20px;
+        position: fixed;
+        box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .sidebar .nav-item {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .sidebar .nav-item a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    .sidebar .nav-item a:hover {
+        color: #ffcc00;
+    }
+
+    main {
+        margin-left: 260px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="navbar">
+    <a href="">Khoi Ngo ASM</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div class="sidebar">
+    <nav>
+        <div class="nav-item">
+            <NavLink class="nav-link" href="">
+                <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
+            </NavLink>
+        </div>
+        <div class="nav-item">
+            <NavLink class="nav-link" href="/Schedules/ScheduleList">
+                <span class="bi bi-calendar-event-fill" aria-hidden="true"></span> Schedule List
+            </NavLink>
+        </div>
+        <div class="nav-item">
+            <NavLink class="nav-link" href="weather">
+                <span class="bi bi-cloud-sun-fill" aria-hidden="true"></span> Weather
+            </NavLink>
+        </div>
+        <div class="nav-item">
+            <NavLink class="nav-link" href="QuizResults/QuizResultList">
+                <span class="bi bi-cloud-sun-fill" aria-hidden="true"></span> Quiz Results
+            </NavLink>
+        </div>
+    </nav>
+</div>
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

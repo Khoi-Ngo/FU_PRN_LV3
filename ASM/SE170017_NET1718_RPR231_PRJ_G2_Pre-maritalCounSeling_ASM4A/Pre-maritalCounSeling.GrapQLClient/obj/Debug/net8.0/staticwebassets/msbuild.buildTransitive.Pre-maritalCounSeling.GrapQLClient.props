@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Pre-maritalCounSeling.GrapQLClient.props" />
+</Project>

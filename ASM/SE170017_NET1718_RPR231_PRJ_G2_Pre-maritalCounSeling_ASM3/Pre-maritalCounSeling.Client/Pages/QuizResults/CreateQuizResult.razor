@@ -1,0 +1,133 @@
+﻿@page "/QuizResults/CreateQuizResult"
+@page "/QuizResults/Edit/{id:long}"
+@using Pre_maritalCounSeling.Client.Models
+@inject HttpClient Http
+@inject NavigationManager navigationManager
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 rounded-4" style="max-width: 600px; margin: auto; background-color: #f8f9fa;">
+        <h3 class="text-center text-primary mb-4">Create Quiz Result</h3>
+
+        @if (quizList == null || userList == null)
+        {
+            <div class="text-center">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p>Loading data...</p>
+            </div>
+        }
+        else
+        {
+            <EditForm Model="@quizResult" OnValidSubmit="HandleSubmit" class="needs-validation" novalidate>
+                <DataAnnotationsValidator />
+                <ValidationSummary class="alert alert-danger" />
+
+                <div class="mb-3">
+                    <label class="form-label">Score:</label>
+                    <InputNumber @bind-Value="quizResult.Score" class="form-control" placeholder="Enter score" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Quiz:</label>
+                    <InputSelect @bind-Value="quizResult.QuizId" class="form-control">
+                        <option value="">Select a quiz</option>
+                        @foreach (var quiz in quizList)
+                        {
+                            <option value="@quiz.Id">@quiz.Title</option>
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">User:</label>
+                    <InputSelect @bind-Value="quizResult.UserId" class="form-control">
+                        <option value="">Select a user</option>
+                        @foreach (var user in userList)
+                        {
+                            <option value="@user.Id">@user.UserName</option>
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Time Completed (seconds):</label>
+                    <InputNumber @bind-Value="quizResult.TimeCompleted" class="form-control" placeholder="Enter time in seconds" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Attempt Time:</label>
+                    <InputNumber @bind-Value="quizResult.AttemptTime" class="form-control" placeholder="Enter attempt time" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Feedback:</label>
+                    <InputTextArea @bind-Value="quizResult.FeedBack" class="form-control" rows="3" placeholder="Enter feedback" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Suggestion:</label>
+                    <InputTextArea @bind-Value="quizResult.SuggestionContent" class="form-control" rows="3" placeholder="Enter suggestion" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </EditForm>
+        }
+    </div>
+</div>
+
+@code {
+
+
+    [Parameter]
+    public long? id { get; set; }
+
+
+    private QuizResult quizResult = new QuizResult();
+    private List<Quiz> quizList;
+    private List<User> userList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        //load the data if the action is editting
+        if (id.HasValue && id > 0)
+        {
+            quizResult = await Http.GetFromJsonAsync<QuizResult>($"https://localhost:7272/api/v1/QuizResults/{id}");
+        }
+
+        quizList = await Http.GetFromJsonAsync<List<Quiz>>("https://localhost:7272/api/v1/quizzes");
+        userList = await Http.GetFromJsonAsync<List<User>>("https://localhost:7272/api/v1/QuizResults/userlistselectbox");
+
+    }
+
+    private async Task HandleSubmit()
+    {
+        var url = "https://localhost:7272/api/v1/QuizResults";
+        var response = id.HasValue && id > 0
+            ? await Http.PutAsJsonAsync(url, quizResult)  // Update existing quiz result
+            : await Http.PostAsJsonAsync(url, quizResult); // Create new quiz result
+
+        if (response.IsSuccessStatusCode)
+        {
+            Console.WriteLine("Quiz result saved successfully!");
+            navigationManager.NavigateTo("/QuizResults/QuizResultList", false);
+        }
+        else
+        {
+            Console.WriteLine("Failed to save quiz result.");
+        }
+    }
+
+
+    public class Quiz
+    {
+        public long Id { get; set; }
+        public string Title { get; set; }
+    }
+
+    public class User
+    {
+        public long Id { get; set; }
+        public string UserName { get; set; }
+    }
+}

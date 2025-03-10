@@ -1,0 +1,6 @@
+@Pre_maritalCounSeling.APIService_HostAddress = http://localhost:5131
+
+GET {{Pre_maritalCounSeling.APIService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

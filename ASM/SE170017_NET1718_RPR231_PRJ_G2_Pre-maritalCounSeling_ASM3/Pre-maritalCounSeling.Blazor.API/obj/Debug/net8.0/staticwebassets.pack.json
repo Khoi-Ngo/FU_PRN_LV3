@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pre_maritalCounSeling.Blazor.API.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Pre_maritalCounSeling.Blazor.API.qfz9ht6dvt.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pre_maritalCounSeling.Blazor.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pre_maritalCounSeling.Blazor.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pre_maritalCounSeling.Blazor.API.props",
+      "PackagePath": "build\\Pre_maritalCounSeling.Blazor.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pre_maritalCounSeling.Blazor.API.props",
+      "PackagePath": "buildMultiTargeting\\Pre_maritalCounSeling.Blazor.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pre_maritalCounSeling.Blazor.API.props",
+      "PackagePath": "buildTransitive\\Pre_maritalCounSeling.Blazor.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

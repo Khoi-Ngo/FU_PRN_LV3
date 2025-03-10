@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pre-maritalCounSeling.APIService.props" />
+</Project>

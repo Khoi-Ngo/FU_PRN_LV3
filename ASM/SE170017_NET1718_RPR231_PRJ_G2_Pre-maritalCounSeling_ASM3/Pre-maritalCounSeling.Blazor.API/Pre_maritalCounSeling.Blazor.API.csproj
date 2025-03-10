@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Pre-maritalCounSeling.Blazor.API</RootNamespace>
+    <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pre-maritalCounSeling.BAL\Pre-maritalCounSeling.BAL.csproj" />
+    <ProjectReference Include="..\Pre-maritalCounSeling.Common\Pre_maritalCounSeling.Common.csproj" />
+    <ProjectReference Include="..\Pre-maritalCounSeling.DAL\Pre-maritalCounSeling.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Pre-maritalCounSeling.GrapQLClient.styles.css",
+      "PackagePath": "staticwebassets\\Pre-maritalCounSeling.GrapQLClient.styles.css"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pre-maritalCounSeling.GrapQLClient.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pre-maritalCounSeling.GrapQLClient.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pre-maritalCounSeling.GrapQLClient.props",
+      "PackagePath": "build\\Pre-maritalCounSeling.GrapQLClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pre-maritalCounSeling.GrapQLClient.props",
+      "PackagePath": "buildMultiTargeting\\Pre-maritalCounSeling.GrapQLClient.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pre-maritalCounSeling.GrapQLClient.props",
+      "PackagePath": "buildTransitive\\Pre-maritalCounSeling.GrapQLClient.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

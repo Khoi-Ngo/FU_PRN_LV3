@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.Common", "Pre-maritalCounSeling.Common\Pre_maritalCounSeling.Common.csproj", "{4FD9FFB7-23BE-45BA-8090-81CC8807B9B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.Blazor.API", "Pre-maritalCounSeling.Blazor.API\Pre_maritalCounSeling.Blazor.API.csproj", "{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.Client", "Pre-maritalCounSeling.Client\Pre_maritalCounSeling.Client.csproj", "{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre-maritalCounSeling.BAL", "Pre-maritalCounSeling.BAL\Pre-maritalCounSeling.BAL.csproj", "{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre-maritalCounSeling.DAL", "Pre-maritalCounSeling.DAL\Pre-maritalCounSeling.DAL.csproj", "{491479BC-4571-4EED-BFF4-60A58C468817}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FD9FFB7-23BE-45BA-8090-81CC8807B9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD9FFB7-23BE-45BA-8090-81CC8807B9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD9FFB7-23BE-45BA-8090-81CC8807B9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD9FFB7-23BE-45BA-8090-81CC8807B9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491479BC-4571-4EED-BFF4-60A58C468817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491479BC-4571-4EED-BFF4-60A58C468817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491479BC-4571-4EED-BFF4-60A58C468817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491479BC-4571-4EED-BFF4-60A58C468817}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

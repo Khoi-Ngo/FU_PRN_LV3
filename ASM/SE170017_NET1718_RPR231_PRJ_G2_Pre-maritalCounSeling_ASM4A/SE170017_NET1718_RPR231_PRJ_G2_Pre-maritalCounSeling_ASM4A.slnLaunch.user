@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Pre-maritalCounSeling.APIService\\Pre-maritalCounSeling.APIService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Pre-maritalCounSeling.GrapQLClient\\Pre-maritalCounSeling.GrapQLClient.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,99 @@
+﻿@page "/QuizResults/QuizResultList"
+@using Pre_maritalCounSeling.Client.Models;
+@inject HttpClient httpClient
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 rounded-4" style="background-color: #f8f9fa;">
+        <h3 class="mb-4 text-center text-primary fw-bold">Quiz Results</h3>
+
+        @if (quizResults == null)
+        {
+            <div class="text-center text-muted">
+                <p>Loading...</p>
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        }
+        else if (!quizResults.Any())
+        {
+            <div class="alert alert-warning text-center fs-5 fw-bold" role="alert">
+                <i class="bi bi-exclamation-circle"></i> No quiz results found.
+            </div>
+        }
+        else
+        {
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 class="text-secondary fw-semibold">Manage Quiz Results</h5>
+                <a class="btn btn-primary shadow-sm px-4 py-2 rounded-pill" href="/QuizResults/CreateQuizResult">
+                    <i class="bi bi-plus-circle"></i> Create New
+                </a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle shadow-sm rounded">
+                    <thead class="table-dark text-center">
+                        <tr>
+                            <th>ID</th>
+                            <th>Quiz Image</th>
+                            <th>Score</th>
+                            <th>Quiz ID</th>
+                            <th>User ID</th>
+                            <th>Result Code</th>
+                            <th>Time Completed</th>
+                            <th>Attempt Time</th>
+                            <th>Suggestion</th>
+                            <th class="text-center">View Detail</th>
+                            <th class="text-center">Edit Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in quizResults)
+                        {
+                            <tr class="border-bottom">
+                                <td class="text-center fw-semibold">@result.Id</td>
+                                <td class="text-center">
+                                    <img src="@result.QuizImg" alt="Quiz Image" width="50" height="50" class="rounded-circle border border-secondary">
+                                </td>
+                                <td class="text-center">@result.Score</td>
+                                <td class="text-center">@result.QuizId</td>
+                                <td class="text-center">@result.UserId</td>
+                                <td class="text-center">@result.QuizResultCode</td>
+                                <td class="text-center">@result.TimeCompleted</td>
+                                <td class="text-center">@result.AttemptTime</td>
+                                <td>@result.SuggestionContent</td>
+                                <td class="text-center">
+                                    <a href="/QuizResults/Detail/@result.Id" class="btn btn-info btn-sm me-2 shadow-sm">
+                                        <i class="bi bi-eye"></i> View
+                                    </a>
+                                </td>
+                                <td class="text-center">
+                                    <a href="/QuizResults/Edit/@result.Id" class="btn btn-warning btn-sm shadow-sm">
+                                        <i class="bi bi-pencil-square"></i> Edit
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    public List<QuizResult>? quizResults;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            quizResults = await httpClient.GetFromJsonAsync<List<QuizResult>>("https://localhost:7272/api/v1/QuizResults");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching quiz results: {ex.Message}");
+            quizResults = new List<QuizResult>(); // Prevent null issues
+        }
+    }
+}
