@@ -4476,9 +4476,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre-maritalCounSeling.DAL.csproj",
-      "projectName": "Pre-maritalCounSeling.DAL",
-      "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre-maritalCounSeling.DAL.csproj",
+      "projectUniqueName": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
+      "projectName": "Pre_maritalCounSeling.DAL",
+      "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
       "packagesPath": "C:\\Users\\khoin\\.nuget\\packages\\",
       "outputPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\obj\\",
       "projectStyle": "PackageReference",

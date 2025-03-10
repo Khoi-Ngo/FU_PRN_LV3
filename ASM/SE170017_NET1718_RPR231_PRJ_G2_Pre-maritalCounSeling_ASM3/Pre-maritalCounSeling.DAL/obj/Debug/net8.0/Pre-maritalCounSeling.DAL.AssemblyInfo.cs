@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pre-maritalCounSeling.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+132e8d1429c96b5afcf731f00aec0e7d57cdcacc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pre-maritalCounSeling.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pre-maritalCounSeling.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

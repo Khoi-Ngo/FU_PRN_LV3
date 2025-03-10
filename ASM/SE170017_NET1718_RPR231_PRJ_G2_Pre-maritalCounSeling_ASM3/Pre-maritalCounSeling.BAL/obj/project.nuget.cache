@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0G4HxT3gcKI=",
+  "dgSpecHash": "zj8MZK+++ag=",
   "success": true,
-  "projectFilePath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre-maritalCounSeling.BAL.csproj",
+  "projectFilePath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khoin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\khoin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -9,7 +9,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Pre-maritalCounSeling.Common\Pre_maritalCounSeling.Common.csproj" />
-		<ProjectReference Include="..\Pre-maritalCounSeling.DAL\Pre-maritalCounSeling.DAL.csproj" />
+		<ProjectReference Include="..\Pre-maritalCounSeling.DAL\Pre_maritalCounSeling.DAL.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -112,8 +112,8 @@ D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\obj\Debug\net8.0\Pre_maritalCounSeling.Blazor.API.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\obj\Debug\net8.0\Pre_maritalCounSeling.Blazor.API.genruntimeconfig.cache
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\obj\Debug\net8.0\ref\Pre_maritalCounSeling.Blazor.API.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre-maritalCounSeling.BAL.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre-maritalCounSeling.DAL.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre-maritalCounSeling.BAL.pdb
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre-maritalCounSeling.DAL.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\obj\Debug\net8.0\Pre_maritalCounSeling.Blazor.API.sourcelink.json
+D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre_maritalCounSeling.BAL.dll
+D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre_maritalCounSeling.DAL.dll
+D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre_maritalCounSeling.BAL.pdb
+D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\Pre-maritalCounSeling.Blazor.API\bin\Debug\net8.0\Pre_maritalCounSeling.DAL.pdb

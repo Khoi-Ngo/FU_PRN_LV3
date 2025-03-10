@@ -2214,23 +2214,6 @@
           }
         }
       },
-      "Pre-maritalCounSeling.DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
-          "Microsoft.EntityFrameworkCore": "8.0.5",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.5",
-          "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Extensions.Configuration.Json": "8.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Pre-maritalCounSeling.DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Pre-maritalCounSeling.DAL.dll": {}
-        }
-      },
       "Pre_maritalCounSeling.Common/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2244,6 +2227,23 @@
         },
         "runtime": {
           "bin/placeholder/Pre_maritalCounSeling.Common.dll": {}
+        }
+      },
+      "Pre_maritalCounSeling.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
+          "Microsoft.EntityFrameworkCore": "8.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.5",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Pre_maritalCounSeling.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Pre_maritalCounSeling.DAL.dll": {}
         }
       }
     }
@@ -6416,15 +6416,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Pre-maritalCounSeling.DAL/1.0.0": {
-      "type": "project",
-      "path": "../Pre-maritalCounSeling.DAL/Pre-maritalCounSeling.DAL.csproj",
-      "msbuildProject": "../Pre-maritalCounSeling.DAL/Pre-maritalCounSeling.DAL.csproj"
-    },
     "Pre_maritalCounSeling.Common/1.0.0": {
       "type": "project",
       "path": "../Pre-maritalCounSeling.Common/Pre_maritalCounSeling.Common.csproj",
       "msbuildProject": "../Pre-maritalCounSeling.Common/Pre_maritalCounSeling.Common.csproj"
+    },
+    "Pre_maritalCounSeling.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Pre-maritalCounSeling.DAL/Pre_maritalCounSeling.DAL.csproj",
+      "msbuildProject": "../Pre-maritalCounSeling.DAL/Pre_maritalCounSeling.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6441,8 +6441,8 @@
       "Microsoft.Extensions.Configuration.CommandLine >= 9.0.1",
       "Microsoft.Extensions.Configuration.EnvironmentVariables >= 9.0.1",
       "Microsoft.Extensions.Configuration.Json >= 9.0.1",
-      "Pre-maritalCounSeling.DAL >= 1.0.0",
-      "Pre_maritalCounSeling.Common >= 1.0.0"
+      "Pre_maritalCounSeling.Common >= 1.0.0",
+      "Pre_maritalCounSeling.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6452,9 +6452,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre-maritalCounSeling.BAL.csproj",
-      "projectName": "Pre-maritalCounSeling.BAL",
-      "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre-maritalCounSeling.BAL.csproj",
+      "projectUniqueName": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
+      "projectName": "Pre_maritalCounSeling.BAL",
+      "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
       "packagesPath": "C:\\Users\\khoin\\.nuget\\packages\\",
       "outputPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\obj\\",
       "projectStyle": "PackageReference",
@@ -6480,8 +6480,8 @@
             "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Common\\Pre_maritalCounSeling.Common.csproj": {
               "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Common\\Pre_maritalCounSeling.Common.csproj"
             },
-            "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre-maritalCounSeling.DAL.csproj": {
-              "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre-maritalCounSeling.DAL.csproj"
+            "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj": {
+              "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj"
             }
           }
         }

@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.Blazo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.Client", "Pre-maritalCounSeling.Client\Pre_maritalCounSeling.Client.csproj", "{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre-maritalCounSeling.BAL", "Pre-maritalCounSeling.BAL\Pre-maritalCounSeling.BAL.csproj", "{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.BAL", "Pre-maritalCounSeling.BAL\Pre_maritalCounSeling.BAL.csproj", "{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre-maritalCounSeling.DAL", "Pre-maritalCounSeling.DAL\Pre-maritalCounSeling.DAL.csproj", "{491479BC-4571-4EED-BFF4-60A58C468817}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.DAL", "Pre-maritalCounSeling.DAL\Pre_maritalCounSeling.DAL.csproj", "{491479BC-4571-4EED-BFF4-60A58C468817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
