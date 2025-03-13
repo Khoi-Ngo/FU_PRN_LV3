@@ -58,7 +58,7 @@
             }
         </div>
         <div class="chat-input p-2 d-flex">
-            <input class="form-control me-2" @bind="message" placeholder="Type a message..." @onkeydown="HandleKeyDown" />
+            <input class="form-control me-2" @bind="message" placeholder="Type a message..."/>
             <button class="btn btn-success" @onclick="SendMessage">Send</button>
         </div>
     </div>
@@ -174,13 +174,7 @@
     {
         isChatCollapsed = !isChatCollapsed;
     }
-    private void HandleKeyDown(KeyboardEventArgs e)
-    {
-        if (e.Key == "Enter")
-        {
-            SendMessage();
-        }
-    }
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -202,7 +196,7 @@
 
         ChatRequest requestContent = new ChatRequest(message);
         var jsonContent = new StringContent(JsonConvert.SerializeObject(requestContent), Encoding.UTF8, "application/json");
-        var response = await httpClient.PostAsync("https://localhost:7272/api/ChatBot/", jsonContent);
+        var response = await httpClient.PostAsync("http://localhost:8080/api/ChatBot/", jsonContent);
 
         if (response.IsSuccessStatusCode)
         {
@@ -230,8 +224,8 @@
         {
             messages.Add("Failed to send message.");
         }
+        message = string.Empty;// clear the input box
 
-        message = string.Empty;
         StateHasChanged();
     }
 

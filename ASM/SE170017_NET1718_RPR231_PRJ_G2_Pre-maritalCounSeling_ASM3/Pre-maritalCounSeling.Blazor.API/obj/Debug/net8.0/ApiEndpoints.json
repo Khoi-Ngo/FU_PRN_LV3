@@ -1,21 +1,5 @@
 [
   {
-    "ContainingType": "Pre_maritalCounSeling.Blazor.API.Controllers.ChatBotController",
-    "Method": "SendMessage",
-    "RelativePath": "api/ChatBot",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "Pre_maritalCounSeling.Blazor.API.Controllers.ChatBotController\u002BChatRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Pre_maritalCounSeling.Blazor.API.Controllers.QuizResultsController",
     "Method": "GetQuizResultsAsync",
     "RelativePath": "api/v1/QuizResults",
