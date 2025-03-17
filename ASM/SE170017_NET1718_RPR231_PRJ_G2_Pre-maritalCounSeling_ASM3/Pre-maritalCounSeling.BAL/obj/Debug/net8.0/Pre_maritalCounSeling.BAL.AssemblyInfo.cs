@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pre_maritalCounSeling.BAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bd501408b39e238e5b62737be0f5674a7a88ae76")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c5148b8868057f75dec6f1e18c48bf3866f1089")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pre_maritalCounSeling.BAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pre_maritalCounSeling.BAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

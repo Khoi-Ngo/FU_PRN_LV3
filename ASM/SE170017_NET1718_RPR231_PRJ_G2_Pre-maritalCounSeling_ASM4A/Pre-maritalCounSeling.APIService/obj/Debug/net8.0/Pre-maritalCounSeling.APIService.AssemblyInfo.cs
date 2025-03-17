@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pre-maritalCounSeling.APIService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c5148b8868057f75dec6f1e18c48bf3866f1089")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pre-maritalCounSeling.APIService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pre-maritalCounSeling.APIService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

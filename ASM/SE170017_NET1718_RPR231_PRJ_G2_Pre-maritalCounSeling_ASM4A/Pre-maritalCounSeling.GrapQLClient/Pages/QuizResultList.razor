@@ -88,18 +88,8 @@
 @code {
     private List<QuizResult>? quizResults;
 
-    // protected override async Task OnInitializedAsync()
-    // {
-    //     quizResults = await httpClient.GetFromJsonAsync<List<QuizResult>>("https:localhost:7272/api/v1/QuizResults");
-    //     quizResults = await httpClient.GetFromJsonAsync<List<QuizResult>>("https:localhost:7117/graphql");
-
-    // }
-
     protected override async Task OnInitializedAsync()
     {
-        // Simulate asynchronous loading to demonstrate streaming rendering
-        //await Task.Delay(500);
-        //var graphqlClient = new zPayment.GraphQLClient.VuLNS.GraphQLClients.GraphQLClient();
 
         try
         {

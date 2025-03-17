@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using Pre_maritalCounSeling.Common.DTOs.Auth;
+using Pre_maritalCounSeling.Common.Models.Auth;
 using Pre_maritalCounSeling.Common.Util;
 using Pre_maritalCounSeling.DAL.Entities;
 using Pre_maritalCounSeling.DAL.Infrastructure;

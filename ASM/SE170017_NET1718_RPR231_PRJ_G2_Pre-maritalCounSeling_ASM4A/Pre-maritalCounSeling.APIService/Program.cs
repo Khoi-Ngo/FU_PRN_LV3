@@ -27,8 +27,8 @@ builder.Services.AddCors(options =>
 #endregion
 
 
-#region GRAPQL region
-builder.Services.AddGraphQLServer().AddQueryType<Query>().BindRuntimeType<DateTime, DateTimeType>();
+#region GRAPQL region add all query and mutation service
+builder.Services.AddGraphQLServer().AddQueryType<QuizResultQuery>().BindRuntimeType<DateTime, DateTimeType>();
 #endregion
 builder.Services.AddControllers().AddJsonOptions(options =>
 {

@@ -4,17 +4,13 @@ using Pre_maritalCounSeling.DAL.Entities;
 
 namespace Pre_maritalCounSeling.APIService.GraphQLs
 {
-    public class Query
+    public class QuizResultQuery
     {
         private readonly IQuizResultService _quizResultService;
-        private readonly IUserService _userService;
-        private readonly IQuizService _quizService;
 
-        public Query(IQuizResultService quizResultService, IUserService userService, IQuizService quizService)
+        public QuizResultQuery(IQuizResultService quizResultService)
         {
             _quizResultService = quizResultService;
-            _userService = userService;
-            _quizService = quizService;
         }
 
         public async Task<List<QuizResult>> GetQuizResultsSimplyAsync()
@@ -26,8 +22,8 @@ namespace Pre_maritalCounSeling.APIService.GraphQLs
             catch (Exception ex)
             {
                 var temp = ex;
+                throw new Exception("Cannot query : " + ex.Message);
             }
-            return null;
         }
 
        //TODO: Create

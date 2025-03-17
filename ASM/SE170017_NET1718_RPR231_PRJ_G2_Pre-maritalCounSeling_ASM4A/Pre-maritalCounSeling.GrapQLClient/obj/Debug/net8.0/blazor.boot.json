@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Pre-maritalCounSeling.GrapQLClient",
   "resources": {
-    "hash": "sha256-8d8Cs2C65bqYBUbOaNpJ1IB3t1Wh44u9k3v4HnNPFIk=",
+    "hash": "sha256-VmPk9uEBhjHXqWxxbDjjXzLTDc0kPEvnQ13mQnF4RX4=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -218,10 +218,10 @@
       "mscorlib.wasm": "sha256-04e4k5XU8HWGB/dq/2+j84xzzGPflTs0IYWI0OxogVc=",
       "netstandard.wasm": "sha256-gnGZURPnoSmjXuYNCOJi5tt8qn2LRImWgue1Ru3/TDQ=",
       "System.Private.CoreLib.wasm": "sha256-6w3jYr0arcp8jnt4aeqh+AmqrLA6q7jl9rQYAwLzE0M=",
-      "Pre-maritalCounSeling.GrapQLClient.wasm": "sha256-xbia5mu0rfej6+HGKog2guukzijuLLIPM2e/oSTwLC8="
+      "Pre-maritalCounSeling.GrapQLClient.wasm": "sha256-xo2vyFlxhPh8U8A+ic8vx4/xf8wYJFa+Wp0aQhRkeEA="
     },
     "pdb": {
-      "Pre-maritalCounSeling.GrapQLClient.pdb": "sha256-VhwceqvpXG7TKNntfTBSxeMc2o9kes5efTHUkQ97myk="
+      "Pre-maritalCounSeling.GrapQLClient.pdb": "sha256-GlJ4mnVXVamLoNxZ02IcKxbWFcERRDDeCRxc0XgiLgE="
     }
   },
   "cacheBootResources": true,

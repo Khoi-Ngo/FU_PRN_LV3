@@ -1,0 +1,128 @@
+﻿{
+   "CodeGenerationMode": 4,
+   "ContextClassName": "NET1718_RPR231_PRJ_G2_PremaritalCounselingContext",
+   "ContextNamespace": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Entities",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "Pre_maritalCounSeling.DAL",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Attached_File]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Feedback]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Feedback_Type]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Post]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Post_Type]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Question]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[question_option]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quiz]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quiz_Question]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quiz_Result]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quiz_Result_Detail]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Quiz_Suggestion]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Role]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Schedule]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Schedule_Type]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Schedule_User]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Service]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Service_Category]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[User]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[User_Detail]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[User_Detail_Category]",
+         "ObjectType": 0
+      }
+   ],
+   "UiHint": null,
+   "UncountableWords": null,
+   "UseAsyncStoredProcedureCalls": true,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDatabaseNamesForRoutines": true,
+   "UseDateOnlyTimeOnly": true,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UsePrefixNavigationNaming": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false,
+   "UseT4Split": false
+}

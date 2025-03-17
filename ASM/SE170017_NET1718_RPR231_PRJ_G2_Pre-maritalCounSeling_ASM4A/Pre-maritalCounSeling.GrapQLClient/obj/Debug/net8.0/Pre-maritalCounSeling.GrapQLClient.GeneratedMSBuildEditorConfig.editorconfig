@@ -32,8 +32,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/FPT_UNI/SP25/PRN_LV3/ASM/SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A/Pre-maritalCounSeling.GrapQLClient/Pages/CreateQuizResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlUXVpelJlc3VsdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/FPT_UNI/SP25/PRN_LV3/ASM/SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A/Pre-maritalCounSeling.GrapQLClient/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_UNI/SP25/PRN_LV3/ASM/SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A/Pre-maritalCounSeling.GrapQLClient/Pages/QuizResultDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUXVpelJlc3VsdERldGFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPT_UNI/SP25/PRN_LV3/ASM/SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A/Pre-maritalCounSeling.GrapQLClient/Pages/QuizResultList.razor]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GI8fL/mhql4HMnWoFAabFO9psP7BOazY1UuZPK9RbqE=",
+  "Hash": "ryjBc0gcX1loh685yR1xGh/5KbY4qVr+9+Io9jacOEo=",
   "Source": "Pre-maritalCounSeling.GrapQLClient",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "8zpv381qbr",
-      "Integrity": "vNeOGrfsNsK3eNCzZXoKrDjwoljrCSvBNilUZIWr2JI=",
+      "Fingerprint": "37iss27s4k",
+      "Integrity": "4WA8BXDYLwjkXLudCSu3jNocrstGHs8CKTAph3rqtdM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -1060,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "ufzt7d5mwf",
-      "Integrity": "VhwceqvpXG7TKNntfTBSxeMc2o9kes5efTHUkQ97myk=",
+      "Fingerprint": "id04nj7bz9",
+      "Integrity": "GlJ4mnVXVamLoNxZ02IcKxbWFcERRDDeCRxc0XgiLgE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\Pre-maritalCounSeling.GrapQLClient.pdb"
@@ -1081,8 +1081,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "7t24gwlyru",
-      "Integrity": "xbia5mu0rfej6+HGKog2guukzijuLLIPM2e/oSTwLC8=",
+      "Fingerprint": "ydhny5gtk8",
+      "Integrity": "xo2vyFlxhPh8U8A+ic8vx4/xf8wYJFa+Wp0aQhRkeEA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\webcil\\Pre-maritalCounSeling.GrapQLClient.wasm"
@@ -5687,7 +5687,7 @@
       "OriginalItemSpec": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Transactions.Local.wasm"
     },
     {
-      "Identity": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\8hd1djo90f-8zpv381qbr.gz",
+      "Identity": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\8hd1djo90f-37iss27s4k.gz",
       "SourceId": "Pre-maritalCounSeling.GrapQLClient",
       "SourceType": "Computed",
       "ContentRoot": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\",
@@ -5701,8 +5701,8 @@
       "RelatedAsset": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6l6q66csmo",
-      "Integrity": "2gHmRW8Ievkhu2ZpveJEoxVKEr3Pelic5lKc+NyhHyk=",
+      "Fingerprint": "t30xkmfg3a",
+      "Integrity": "yRoTX1vHDkklaXEJbToKWDYQSMq/Z8OHSXaeOuaaPxU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -8312,7 +8312,7 @@
       "OriginalItemSpec": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Threading.Thread.wasm"
     },
     {
-      "Identity": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\v9je6qpt07-7t24gwlyru.gz",
+      "Identity": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\v9je6qpt07-ydhny5gtk8.gz",
       "SourceId": "Pre-maritalCounSeling.GrapQLClient",
       "SourceType": "Computed",
       "ContentRoot": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\",
@@ -8326,14 +8326,14 @@
       "RelatedAsset": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Pre-maritalCounSeling.GrapQLClient.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "eb0uxq34os",
-      "Integrity": "GvZ1UfYaM+5LaU0E/KUwp97L/yQmqy35HWaztkAnPvQ=",
+      "Fingerprint": "xjj5ae4wyg",
+      "Integrity": "w4twAqZbSrztlVZLtIPsSSkCd1Cg5ufor03afbs58jw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Pre-maritalCounSeling.GrapQLClient.wasm"
     },
     {
-      "Identity": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\vam938az65-ufzt7d5mwf.gz",
+      "Identity": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\vam938az65-id04nj7bz9.gz",
       "SourceId": "Pre-maritalCounSeling.GrapQLClient",
       "SourceType": "Computed",
       "ContentRoot": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\",
@@ -8347,8 +8347,8 @@
       "RelatedAsset": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Pre-maritalCounSeling.GrapQLClient.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jlu2zytb9k",
-      "Integrity": "Z2L3pBVy73A9WOx0G1E9fUQewjXdxE1wHm00O/8PczE=",
+      "Fingerprint": "ifsu98q8xx",
+      "Integrity": "blSgL0AQDvIBD0ZsSG8dYjz2WNnYkwMIUG1+mSMyVFE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Pre-maritalCounSeling.GrapQLClient.pdb"
@@ -9214,7 +9214,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vNeOGrfsNsK3eNCzZXoKrDjwoljrCSvBNilUZIWr2JI=\""
+          "Value": "\"4WA8BXDYLwjkXLudCSu3jNocrstGHs8CKTAph3rqtdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:29:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4WA8BXDYLwjkXLudCSu3jNocrstGHs8CKTAph3rqtdM="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\8hd1djo90f-37iss27s4k.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000108061379"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9253"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yRoTX1vHDkklaXEJbToKWDYQSMq/Z8OHSXaeOuaaPxU=\""
         },
         {
           "Name": "Last-Modified",
@@ -9223,45 +9262,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vNeOGrfsNsK3eNCzZXoKrDjwoljrCSvBNilUZIWr2JI="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\8hd1djo90f-8zpv381qbr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000108038029"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9255"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2gHmRW8Ievkhu2ZpveJEoxVKEr3Pelic5lKc+NyhHyk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 01:27:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -9277,19 +9277,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"vNeOGrfsNsK3eNCzZXoKrDjwoljrCSvBNilUZIWr2JI=\""
+          "Value": "W/\"4WA8BXDYLwjkXLudCSu3jNocrstGHs8CKTAph3rqtdM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vNeOGrfsNsK3eNCzZXoKrDjwoljrCSvBNilUZIWr2JI="
+          "Value": "sha256-4WA8BXDYLwjkXLudCSu3jNocrstGHs8CKTAph3rqtdM="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\8hd1djo90f-8zpv381qbr.gz",
+      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\8hd1djo90f-37iss27s4k.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9298,7 +9298,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9255"
+          "Value": "9253"
         },
         {
           "Name": "Content-Type",
@@ -9306,11 +9306,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2gHmRW8Ievkhu2ZpveJEoxVKEr3Pelic5lKc+NyhHyk=\""
+          "Value": "\"yRoTX1vHDkklaXEJbToKWDYQSMq/Z8OHSXaeOuaaPxU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 01:27:20 GMT"
+          "Value": "Mon, 10 Mar 2025 01:29:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9328,7 +9328,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2gHmRW8Ievkhu2ZpveJEoxVKEr3Pelic5lKc+NyhHyk="
+          "Value": "sha256-yRoTX1vHDkklaXEJbToKWDYQSMq/Z8OHSXaeOuaaPxU="
         }
       ]
     },
@@ -15927,7 +15927,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VhwceqvpXG7TKNntfTBSxeMc2o9kes5efTHUkQ97myk=\""
+          "Value": "\"GlJ4mnVXVamLoNxZ02IcKxbWFcERRDDeCRxc0XgiLgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:29:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GlJ4mnVXVamLoNxZ02IcKxbWFcERRDDeCRxc0XgiLgE="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Pre-maritalCounSeling.GrapQLClient.pdb",
+      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\vam938az65-id04nj7bz9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000040604190"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24627"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"blSgL0AQDvIBD0ZsSG8dYjz2WNnYkwMIUG1+mSMyVFE=\""
         },
         {
           "Name": "Last-Modified",
@@ -15936,45 +15975,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VhwceqvpXG7TKNntfTBSxeMc2o9kes5efTHUkQ97myk="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Pre-maritalCounSeling.GrapQLClient.pdb",
-      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\vam938az65-ufzt7d5mwf.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000045071438"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "22186"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Z2L3pBVy73A9WOx0G1E9fUQewjXdxE1wHm00O/8PczE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 01:27:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -15990,19 +15990,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VhwceqvpXG7TKNntfTBSxeMc2o9kes5efTHUkQ97myk=\""
+          "Value": "W/\"GlJ4mnVXVamLoNxZ02IcKxbWFcERRDDeCRxc0XgiLgE=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VhwceqvpXG7TKNntfTBSxeMc2o9kes5efTHUkQ97myk="
+          "Value": "sha256-GlJ4mnVXVamLoNxZ02IcKxbWFcERRDDeCRxc0XgiLgE="
         }
       ]
     },
     {
       "Route": "_framework/Pre-maritalCounSeling.GrapQLClient.pdb.gz",
-      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\vam938az65-ufzt7d5mwf.gz",
+      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\vam938az65-id04nj7bz9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16011,7 +16011,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22186"
+          "Value": "24627"
         },
         {
           "Name": "Content-Type",
@@ -16019,11 +16019,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z2L3pBVy73A9WOx0G1E9fUQewjXdxE1wHm00O/8PczE=\""
+          "Value": "\"blSgL0AQDvIBD0ZsSG8dYjz2WNnYkwMIUG1+mSMyVFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 01:27:20 GMT"
+          "Value": "Mon, 10 Mar 2025 01:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16041,7 +16041,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Z2L3pBVy73A9WOx0G1E9fUQewjXdxE1wHm00O/8PczE="
+          "Value": "sha256-blSgL0AQDvIBD0ZsSG8dYjz2WNnYkwMIUG1+mSMyVFE="
         }
       ]
     },
@@ -16064,7 +16064,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xbia5mu0rfej6+HGKog2guukzijuLLIPM2e/oSTwLC8=\""
+          "Value": "\"xo2vyFlxhPh8U8A+ic8vx4/xf8wYJFa+Wp0aQhRkeEA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Mar 2025 04:29:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xo2vyFlxhPh8U8A+ic8vx4/xf8wYJFa+Wp0aQhRkeEA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Pre-maritalCounSeling.GrapQLClient.wasm",
+      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\v9je6qpt07-ydhny5gtk8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000068984547"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14495"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w4twAqZbSrztlVZLtIPsSSkCd1Cg5ufor03afbs58jw=\""
         },
         {
           "Name": "Last-Modified",
@@ -16073,45 +16112,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xbia5mu0rfej6+HGKog2guukzijuLLIPM2e/oSTwLC8="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Pre-maritalCounSeling.GrapQLClient.wasm",
-      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\v9je6qpt07-7t24gwlyru.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000070442378"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "14195"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GvZ1UfYaM+5LaU0E/KUwp97L/yQmqy35HWaztkAnPvQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 01:27:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -16127,19 +16127,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xbia5mu0rfej6+HGKog2guukzijuLLIPM2e/oSTwLC8=\""
+          "Value": "W/\"xo2vyFlxhPh8U8A+ic8vx4/xf8wYJFa+Wp0aQhRkeEA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xbia5mu0rfej6+HGKog2guukzijuLLIPM2e/oSTwLC8="
+          "Value": "sha256-xo2vyFlxhPh8U8A+ic8vx4/xf8wYJFa+Wp0aQhRkeEA="
         }
       ]
     },
     {
       "Route": "_framework/Pre-maritalCounSeling.GrapQLClient.wasm.gz",
-      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\v9je6qpt07-7t24gwlyru.gz",
+      "AssetFile": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\Debug\\net8.0\\compressed\\v9je6qpt07-ydhny5gtk8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -16148,7 +16148,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14195"
+          "Value": "14495"
         },
         {
           "Name": "Content-Type",
@@ -16156,11 +16156,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GvZ1UfYaM+5LaU0E/KUwp97L/yQmqy35HWaztkAnPvQ=\""
+          "Value": "\"w4twAqZbSrztlVZLtIPsSSkCd1Cg5ufor03afbs58jw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 01:27:20 GMT"
+          "Value": "Mon, 10 Mar 2025 01:29:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -16178,7 +16178,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GvZ1UfYaM+5LaU0E/KUwp97L/yQmqy35HWaztkAnPvQ="
+          "Value": "sha256-w4twAqZbSrztlVZLtIPsSSkCd1Cg5ufor03afbs58jw="
         }
       ]
     },

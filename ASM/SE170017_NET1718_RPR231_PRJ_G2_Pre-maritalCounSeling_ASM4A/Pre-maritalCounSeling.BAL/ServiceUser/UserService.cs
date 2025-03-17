@@ -1,6 +1,5 @@
 ﻿using Pre_maritalCounSeling.BAL.Auth;
-using Pre_maritalCounSeling.Common.DTOs;
-using Pre_maritalCounSeling.Common.DTOs.Auth;
+using Pre_maritalCounSeling.Common.Models.Auth;
 using Pre_maritalCounSeling.Common.Util;
 using Pre_maritalCounSeling.DAL.Entities;
 using Pre_maritalCounSeling.DAL.Infrastructure;

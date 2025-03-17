@@ -196,7 +196,7 @@
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultDetail.razor",
               "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultDetail.razor",
               "RelativeToolTip": "Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultDetail.razor",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAwwM4AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAEwNMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-03T01:54:55.818Z",
               "EditorCaption": ""
@@ -211,8 +211,7 @@
               "RelativeToolTip": "Pre-maritalCounSeling.Blazor.API\\Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAABIAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T01:51:59.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T01:51:59.729Z"
             },
             {
               "$type": "Document",
@@ -260,8 +259,7 @@
               "RelativeToolTip": "Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizResultsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T01:55:25.443Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T01:55:25.443Z"
             },
             {
               "$type": "Document",
