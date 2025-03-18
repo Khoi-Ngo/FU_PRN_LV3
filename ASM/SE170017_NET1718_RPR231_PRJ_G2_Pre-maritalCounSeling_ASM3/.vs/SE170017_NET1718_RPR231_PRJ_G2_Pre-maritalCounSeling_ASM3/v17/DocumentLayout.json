@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}|Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.bal\\servicequiz\\quizresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}|Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj|solutionrelative:pre-maritalcounseling.bal\\servicequiz\\quizresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}|Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.blazor.api\\controllers\\quizresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}|Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj|solutionrelative:pre-maritalcounseling.blazor.api\\controllers\\quizresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.dal\\entities\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|solutionrelative:pre-maritalcounseling.dal\\entities\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}|Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.client\\pages\\quizresults\\quizresultdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}|Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj|solutionrelative:pre-maritalcounseling.client\\pages\\quizresults\\quizresultdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}|Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.client\\models\\chatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}|Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj|solutionrelative:pre-maritalcounseling.client\\models\\chatresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}|Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.blazor.api\\controllers\\quizresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BFEBFD3-3B96-4A1D-8D0E-9DE276DB145A}|Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj|solutionrelative:pre-maritalcounseling.blazor.api\\controllers\\quizresultscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB409BEB-7338-4E42-B9F8-4811BFFFD8C0}|Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.client\\pages\\quizresults\\quizresultlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -115,16 +123,8 @@
       "RelativeMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|solutionrelative:pre-maritalcounseling.dal\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}|Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.bal\\servicequiz\\quizresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AA9D44-C2A3-4445-9DDC-5339CD70EF89}|Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj|solutionrelative:pre-maritalcounseling.bal\\servicequiz\\quizresultservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.dal\\repositories\\quizrepo\\quizresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|solutionrelative:pre-maritalcounseling.dal\\repositories\\quizrepo\\quizresultrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.dal\\entities\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|solutionrelative:pre-maritalcounseling.dal\\entities\\quizresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{491479BC-4571-4EED-BFF4-60A58C468817}|Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj|d:\\fpt_uni\\sp25\\prn_lv3\\asm\\se170017_net1718_rpr231_prj_g2_pre-maritalcounseling_asm3\\pre-maritalcounseling.dal\\infrastructure\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,7 +150,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -190,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "QuizResultDetail.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultDetail.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultDetail.razor",
@@ -203,31 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Program.cs",
-              "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Program.cs",
-              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Program.cs",
-              "RelativeToolTip": "Pre-maritalCounSeling.Blazor.API\\Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADEAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T01:51:59.729Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Pre_maritalCounSeling.DAL.csproj",
-              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
-              "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
-              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
-              "RelativeToolTip": "Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-05T23:56:07.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "QuizResultList.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultList.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Pages\\QuizResults\\QuizResultList.razor",
@@ -239,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ChatRequest.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Models\\ChatRequest.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Models\\ChatRequest.cs",
@@ -251,19 +227,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "QuizResultsController.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizResultsController.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizResultsController.cs",
               "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizResultsController.cs",
               "RelativeToolTip": "Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizResultsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABaAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAxwHIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T01:55:25.443Z"
+              "WhenOpened": "2025-03-03T01:55:25.443Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Program.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Program.cs",
@@ -275,7 +252,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
+              "Title": "QuizResult.cs",
+              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
+              "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
+              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
+              "RelativeToolTip": "Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADgvygAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T00:28:57.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuizResultService.cs",
+              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
+              "RelativeDocumentMoniker": "Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
+              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
+              "RelativeToolTip": "Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA+wB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:58:47.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pre_maritalCounSeling.DAL.csproj",
+              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
+              "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
+              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
+              "RelativeToolTip": "Pre-maritalCounSeling.DAL\\Pre_maritalCounSeling.DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-05T23:56:07.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Program.cs",
+              "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Program.cs",
+              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Program.cs",
+              "RelativeToolTip": "Pre-maritalCounSeling.Blazor.API\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T01:51:59.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "CreateQuizResult.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Pages\\QuizResults\\CreateQuizResult.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Pages\\QuizResults\\CreateQuizResult.razor",
@@ -287,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Pre_maritalCounSeling.BAL",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
@@ -298,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AttachedFile.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Entities\\AttachedFile.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Entities\\AttachedFile.cs",
@@ -310,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "ChatResponse.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Models\\ChatResponse.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Models\\ChatResponse.cs",
@@ -322,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "DependenciesInjection.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\DependenciesInjection.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.BAL\\DependenciesInjection.cs",
@@ -334,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Quiz.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Entities\\Quiz.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Entities\\Quiz.cs",
@@ -346,19 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "QuizResultService.cs",
-              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
-              "RelativeDocumentMoniker": "Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
-              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
-              "RelativeToolTip": "Pre-maritalCounSeling.BAL\\ServiceQuiz\\QuizResultService.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAgwFgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-05T23:58:47.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "QuizResultRepository.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Repositories\\QuizRepo\\QuizResultRepository.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Repositories\\QuizRepo\\QuizResultRepository.cs",
@@ -367,18 +382,6 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAUwBsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T07:37:45.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "QuizResult.cs",
-              "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
-              "RelativeDocumentMoniker": "Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
-              "ToolTip": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
-              "RelativeToolTip": "Pre-maritalCounSeling.DAL\\Entities\\QuizResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T00:28:57.167Z"
             },
             {
               "$type": "Document",
@@ -394,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "GetQuizResultsResponse.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Common\\DTOs\\GetQuizResultsResponse.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Common\\DTOs\\GetQuizResultsResponse.cs",
@@ -418,7 +421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Home.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Pages\\Home.razor",
@@ -430,7 +433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "App.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\App.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\App.razor",
@@ -442,7 +445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Layout\\MainLayout.razor",
@@ -454,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Layout\\NavMenu.razor",
@@ -466,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Components\\Layout\\NavMenu.razor",
@@ -478,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "QuizsController.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizsController.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Controllers\\QuizsController.cs",
@@ -490,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Components\\Layout\\MainLayout.razor",
@@ -502,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "AppUtil.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Common\\Util\\AppUtil.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Common\\Util\\AppUtil.cs",
@@ -538,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Pre_maritalCounSeling.Client.csproj",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Client\\Pre_maritalCounSeling.Client.csproj",
@@ -550,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Pre_maritalCounSeling.Blazor.API.csproj",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Pre_maritalCounSeling.Blazor.API.csproj",
@@ -562,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Pre_maritalCounSeling.BAL.csproj",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.BAL\\Pre_maritalCounSeling.BAL.csproj",
@@ -574,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "UserUtil.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Common\\Util\\UserUtil.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Common\\Util\\UserUtil.cs",
@@ -586,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "GeneralValueValidateUtil.cs",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Common\\Util\\GeneralValueValidateUtil.cs",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Common\\Util\\GeneralValueValidateUtil.cs",
@@ -598,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "App.razor",
               "DocumentMoniker": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM3\\Pre-maritalCounSeling.Blazor.API\\Components\\App.razor",
               "RelativeDocumentMoniker": "Pre-maritalCounSeling.Blazor.API\\Components\\App.razor",
