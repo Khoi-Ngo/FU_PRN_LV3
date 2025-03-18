@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pre_maritalCounSeling.BAL",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServiceLayer", "SoapServiceLayer\SoapServiceLayer.csproj", "{432B03CE-52AE-49A1-BAF5-71A9DE0463C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAP.API.Service", "SOAP.API.Service\SOAP.API.Service.csproj", "{AFDB826E-B467-485A-97A4-CAD56A95BF50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{432B03CE-52AE-49A1-BAF5-71A9DE0463C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{432B03CE-52AE-49A1-BAF5-71A9DE0463C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{432B03CE-52AE-49A1-BAF5-71A9DE0463C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFDB826E-B467-485A-97A4-CAD56A95BF50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFDB826E-B467-485A-97A4-CAD56A95BF50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFDB826E-B467-485A-97A4-CAD56A95BF50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFDB826E-B467-485A-97A4-CAD56A95BF50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
