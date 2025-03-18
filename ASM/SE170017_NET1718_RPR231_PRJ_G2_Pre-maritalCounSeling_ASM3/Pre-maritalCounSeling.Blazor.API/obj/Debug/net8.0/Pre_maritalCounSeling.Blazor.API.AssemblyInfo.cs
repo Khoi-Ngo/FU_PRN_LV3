@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pre_maritalCounSeling.Blazor.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d421cfd5badf657313c055806dac734252aa6ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05e399e6709b4ae348611eb60a9a40fec63db824")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pre_maritalCounSeling.Blazor.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pre_maritalCounSeling.Blazor.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
