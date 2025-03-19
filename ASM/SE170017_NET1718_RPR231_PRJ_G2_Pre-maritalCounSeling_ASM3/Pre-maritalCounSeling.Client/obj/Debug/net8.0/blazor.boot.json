@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Pre_maritalCounSeling.Client",
   "resources": {
-    "hash": "sha256-AEZI5+uRD7s1QENgrrvVHPAWmldFY4IH7AE42wxPosc=",
+    "hash": "sha256-q4JoPcop5kpXtJxEPLdSF8XudFo7wm/5L0RNLTAb88k=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-VdKq87/z5NIxZKmuM+fv38XF+RcEb/bg3jVBwQSfwP4="
     },
@@ -210,10 +210,10 @@
       "mscorlib.wasm": "sha256-04e4k5XU8HWGB/dq/2+j84xzzGPflTs0IYWI0OxogVc=",
       "netstandard.wasm": "sha256-gnGZURPnoSmjXuYNCOJi5tt8qn2LRImWgue1Ru3/TDQ=",
       "System.Private.CoreLib.wasm": "sha256-6w3jYr0arcp8jnt4aeqh+AmqrLA6q7jl9rQYAwLzE0M=",
-      "Pre_maritalCounSeling.Client.wasm": "sha256-FQTRAR6P3hO8T6qQfkxLJaUqIkhmcji9fGPYQ+bEVO8="
+      "Pre_maritalCounSeling.Client.wasm": "sha256-3yks3wr4qaXtpV7GP4vNCwFA2JdKnt6EEgu79GdP/2M="
     },
     "pdb": {
-      "Pre_maritalCounSeling.Client.pdb": "sha256-4tRaQCOb5O6t90oydz72yKosfsxTAfLcTuIFNkmuPeM="
+      "Pre_maritalCounSeling.Client.pdb": "sha256-hZQNy+Ay+f1u+hs5B0Pv+qrhz4GAKnRrfLLMG/1uTQY="
     }
   },
   "cacheBootResources": true,
