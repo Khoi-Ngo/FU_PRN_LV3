@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PE_PRN231_SP25_TrialTest_NGODATKHOI_FE.Models;
+using PresentationUI.Models;
 
-namespace PE_PRN231_SP25_TrialTest_NGODATKHOI_FE.Controllers
+namespace PresentationUI.Controllers
 {
     public class HomeController : Controller
     {

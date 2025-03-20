@@ -2,13 +2,9 @@
 using Microsoft.IdentityModel.Tokens;
 using Repository;
 using Repository.Models;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessService
 {
@@ -58,11 +54,11 @@ namespace BusinessService
             throw new NotImplementedException();
         }
 
-        public async Task<string> LoginAsync(string userName, string password)
+        public async Task<object?> LoginAsync(string userName, string password)
         {
             var user = await accountRepo.GetUser(userName, password);
             var accessToken = GenerateAccessToken(user);
-            return "Bearer " + accessToken;
+            return new { token = "Bearer " + accessToken };
         }
 
         public async Task UpdateAsync(CosmeticInformation request)
@@ -101,6 +97,33 @@ namespace BusinessService
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);
             return jwt;
         }
+
+        public async Task<object?> SearchAsync(string item1, string item2, string item3)
+        {
+            return await cosInfoRepo.SearchAsync(
+                item1 != null ? item1 : "",
+                item2 != null ? item2 : "",
+                item3 != null ? item3 : ""
+                );
+        }
+
+        public async Task<object?> GetViewBag()
+        {
+            return (await cateRepo.GetAllAsync()).Select(x => x.CategoryId).ToList();
+        }
+
+        public async Task<object?> SearchAsync2(string item1, string item2, string item3)
+        {
+            var response = await cosInfoRepo.SearchAsync2(
+                item1 ?? "",
+                item2 ?? "",
+                item3 ?? ""
+            );
+
+            return response;
+        }
+
+
 
         #endregion
     }

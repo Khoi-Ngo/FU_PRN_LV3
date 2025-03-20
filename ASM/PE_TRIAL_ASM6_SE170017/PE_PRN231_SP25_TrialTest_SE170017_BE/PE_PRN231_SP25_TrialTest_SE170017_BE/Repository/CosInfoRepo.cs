@@ -28,7 +28,7 @@ namespace Repository
                     x.CategoryId,
                     CategoryName = x.Category.CategoryName
                 })
-                .ToListAsync();
+                .OrderByDescending(x => x.CosmeticId).ToListAsync();
         }
 
         //return await _context.CosmeticInformations.Include(x => x.Category.CategoryName).ToListAsync();
@@ -39,5 +39,63 @@ namespace Repository
             return await _context.CosmeticInformations.Include(x => x.Category).FirstOrDefaultAsync(x => x.CosmeticId == id);
 
         }
+
+        public async Task<object?> SearchAsync(string item1, string item2, string item3)
+        {
+            var res = await _context.CosmeticInformations
+                .Where(x =>
+                    x.CosmeticName.Contains(item1) &&
+                    x.CosmeticSize.Contains(item2) &&
+                    x.SkinType.Contains(item3))
+                                .Select(x => new
+                                {
+                                    x.CosmeticId,
+                                    x.CosmeticName,
+                                    x.SkinType,
+                                    x.ExpirationDate,
+                                    x.CosmeticSize,
+                                    x.DollarPrice,
+                                    x.CategoryId,
+                                    CategoryName = x.Category.CategoryName
+                                })
+                .GroupBy(x => new { x.CosmeticName, x.CosmeticSize, x.SkinType })
+                .Select(group => new
+                {
+                    CosmeticName = group.Key.CosmeticName,
+                    CosmeticSize = group.Key.CosmeticSize,
+                    SkinType = group.Key.SkinType,
+                    Items = group.ToList() // Convert group to list
+                })
+                .ToListAsync();
+
+            return res;
+        }
+
+        public async Task<object?> SearchAsync2(string item1, string item2, string item3)
+        {
+            var res = await _context.CosmeticInformations
+                .Where(x =>
+                    x.CosmeticName.Contains(item1) &&
+                    x.CosmeticSize.Contains(item2) &&
+                    x.SkinType.Contains(item3))
+                .Select(x => new
+                {
+                    x.CosmeticId,
+                    x.CosmeticName,
+                    x.SkinType,
+                    x.ExpirationDate,
+                    x.CosmeticSize,
+                    x.DollarPrice,
+                    x.CategoryId,
+                    CategoryName = x.Category.CategoryName
+                })
+                .OrderBy(x => x.CosmeticName)  // Ordering by CosmeticName first
+                .ThenBy(x => x.SkinType)       // Then ordering by SkinType
+                .ThenBy(x => x.CosmeticSize)   // Then ordering by CosmeticSize
+                .ToListAsync();
+
+            return res; // Returning as object (anonymous type collection)
+        }
+
     }
 }

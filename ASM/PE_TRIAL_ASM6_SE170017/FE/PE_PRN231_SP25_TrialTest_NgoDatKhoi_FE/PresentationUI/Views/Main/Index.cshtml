@@ -1,0 +1,94 @@
+﻿@model IEnumerable<CosmeticInformation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+
+</p>
+<form asp-action="Search">
+   
+
+    <div class="form-group">
+        <labelclass="control-label">Item1</label>
+        <input name="item1" class="form-control" />
+    </div>
+
+
+    <div class="form-group">
+        <labelclass ="control-label">
+            Item2</label>
+            <input name="item2" class="form-control" />
+    </div>
+
+
+    <div class="form-group">
+        <labelclass ="control-label">
+            Item3</label>
+            <input name="item3" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </div>
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CosmeticName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SkinType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CosmeticSize)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ExpirationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DollarPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CosmeticName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SkinType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CosmeticSize)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ExpirationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DollarPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CosmeticId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CosmeticId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

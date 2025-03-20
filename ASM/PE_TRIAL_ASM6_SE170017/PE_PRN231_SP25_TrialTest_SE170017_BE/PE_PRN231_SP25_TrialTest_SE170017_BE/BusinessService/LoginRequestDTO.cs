@@ -8,7 +8,7 @@ namespace BusinessService
 {
     public class LoginRequestDTO
     {
-        public string UserName { get; set; } // can act as email
+        public string UserName { get; set; }
         public string Password { get; set; }
     }
 }

@@ -6,7 +6,7 @@ using Repository.Models;
 
 namespace API_SERVICE.Controllers
 {
-    [Route("[controller]")]
+    [Route("api")]
     [ApiController]
     public class MainController : ControllerBase
     {
@@ -17,154 +17,95 @@ namespace API_SERVICE.Controllers
             this.mainService = mainService;
         }
         [HttpGet]
-        //[PermissionAuthorize("Admin", "Customer")]
-        [PermissionAuthorize(1)]
-
-
+        [PermissionAuthorize(1,2,3)]
         [EnableQuery]
-        public async Task<IActionResult> GetAllAsync()
-        {
-            try
-            {
-                return Ok(await mainService.GetAllAsync());
-            }
-            catch (Exception ex)
-            {
-                return NotFound();
-            }
-        }
+        public async Task<IActionResult> GetAllAsync() => Ok(await mainService.GetAllAsync());
+
         [HttpGet("{idstr}")]
-        //[PermissionAuthorize("Admin", "Customer")]
         [PermissionAuthorize(1)]
-
         [EnableQuery]
-        public async Task<IActionResult> GetDetailAsync(string idstr)
-        {
-            try
-            {
-                return Ok(await mainService.GetDetailAsync(idstr));
-            }
-            catch (Exception ex)
-            {
-                return NotFound();
-            }
-        }
-        [HttpDelete("{idstr}")]
-        //[PermissionAuthorize("Admin", "Customer")]
+        public async Task<IActionResult> GetDetailAsync(string idstr) => Ok(await mainService.GetDetailAsync(idstr));
 
+        [HttpGet("viewbag")]
         [PermissionAuthorize(1)]
+        public async Task<IActionResult> GetViewBag()
+        {
+            return Ok(await mainService.GetViewBag());
+        }
 
+        [HttpDelete("{idstr}")]
+        [PermissionAuthorize(1, 2, 3)]
         public async Task<IActionResult> DeleteAsync(string idstr)
         {
-            try
-            {
-                await mainService.DeleteAsync(idstr);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Error when deleting.");
-            }
+            await mainService.DeleteAsync(idstr);
+            return Ok();
         }
-        //[HttpDelete("{id}")]
-        ////[PermissionAuthorize("Admin", "Customer")]
-        //public async Task<IActionResult> DeleteAsync(long id)
-        //{
-        //    try
-        //    {
-        //        await mainService.DeleteAsync(id);
-        //        return Ok();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return StatusCode(500, "Error when deleting.");
-        //    }
-        //}
-        //[HttpGet("{id}")]
-        ////[PermissionAuthorize("Admin", "Customer")]
-        //[EnableQuery]
-        //public async Task<IActionResult> GetDetailAsync(long id)
-        //{
-        //    try
-        //    {
-        //        return Ok(await mainService.GetDetailAsync(id));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return NotFound();
-        //    }
-        //}
 
         [HttpPut]
-        //[PermissionAuthorize("Admin")]
         [PermissionAuthorize(1)]
-
-        public async Task<IActionResult> UpdateAsync([FromBody] CosmeticInformation request)
+        public async Task<IActionResult> UpdateAsync([FromBody] CreateUpdateDTO request)
         {
-            try
-            {
-                await mainService.UpdateAsync(request);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Error when updating");
-            }
+            await mainService.UpdateAsync(MapToEntity<CreateUpdateDTO, CosmeticInformation>(request));
+            return Ok();
         }
-
 
         [HttpPost]
-        //[PermissionAuthorize("Admin")]
         [PermissionAuthorize(1)]
-
-
-        public async Task<IActionResult> CreateAsync([FromBody] CosmeticInformation request)
+        public async Task<IActionResult> CreateAsync([FromBody] CreateUpdateDTO request)
         {
-            try
-            {
-                await mainService.CreateAsync(request);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Error creating " });
-            }
+            await mainService.CreateAsync(MapToEntity<CreateUpdateDTO, CosmeticInformation>(request));
+            return Ok();
         }
 
-
-        //SEARCH
-        //[HttpGet]
-        ////[PermissionAuthorize("Admin", "Customer")]
-        //[EnableQuery]
-        //public async Task<IActionResult> GetAllAsync()
-        //{
-        //    try
-        //    {
-        //        return Ok(await mainService.GetAllAsync());
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return NotFound();
-        //    }
-        //}
+        [HttpPost("search")]
+        [PermissionAuthorize(1, 2, 3)]
+        public async Task<IActionResult> SearchAsync(SearchRequest request) => Ok(await mainService.SearchAsync(request.Item1, request.Item2, request.Item3));
 
 
-        //LOGIN
+        [HttpPost("search2")]
+        [PermissionAuthorize(1, 2, 3)]
+        public async Task<IActionResult> SearchAsync2(SearchRequest request)
+        {
+            return Ok(await mainService.SearchAsync2(request.Item1, request.Item2, request.Item3));
+        }
 
-        //Authenticate
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> LoginAsync([FromBody] LoginRequestDTO request)
+        public async Task<IActionResult> LoginAsync([FromBody] LoginRequestDTO request) => Ok(await mainService.LoginAsync(request.UserName, request.Password));
+
+
+
+        private TEntity MapToEntity<TDTO, TEntity>(TDTO dto) where TEntity : new()
         {
-            try
+            if (dto == null) return default;
+
+            var entity = new TEntity();
+            var dtoProperties = typeof(TDTO).GetProperties();
+            var entityProperties = typeof(TEntity).GetProperties().ToDictionary(p => p.Name);
+
+            foreach (var dtoProp in dtoProperties)
             {
-                return Ok(await mainService.LoginAsync(request.UserName, request.Password));
+                if (entityProperties.TryGetValue(dtoProp.Name, out var entityProp) &&
+                    entityProp.CanWrite &&
+                    entityProp.PropertyType.IsAssignableFrom(dtoProp.PropertyType))
+                {
+                    entityProp.SetValue(entity, dtoProp.GetValue(dto));
+                }
             }
-            catch (Exception ex)
-            {
-                return BadRequest("Something wrong when login");
-            }
+
+            return entity;
         }
     }
+    //[HttpGet("{id}")]
+    //[PermissionAuthorize(1)]
+    //[EnableQuery]
+    //public async Task<IActionResult> GetDetailAsync(int id) => Ok(await mainService.GetDetailAsync(id));
 
+    //[HttpDelete("{id}")]
+    //[PermissionAuthorize(1)]
+    //public async Task<IActionResult> DeleteAsync(int id)
+    //{
+    //    await mainService.DeleteAsync(id);
+    //    return Ok();
+    //}
 }

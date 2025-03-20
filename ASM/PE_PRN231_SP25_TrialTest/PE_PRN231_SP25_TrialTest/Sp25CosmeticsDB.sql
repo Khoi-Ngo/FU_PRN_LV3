@@ -90,3 +90,6 @@ GO
 
 
 
+select * from [SystemAccount];
+select * from [CosmeticCategory];
+select * from [CosmeticInformation];
