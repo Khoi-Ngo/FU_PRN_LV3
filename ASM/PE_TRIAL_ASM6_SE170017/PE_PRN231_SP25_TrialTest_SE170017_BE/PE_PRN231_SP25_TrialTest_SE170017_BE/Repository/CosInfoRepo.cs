@@ -44,9 +44,9 @@ namespace Repository
         {
             var res = await _context.CosmeticInformations
                 .Where(x =>
-                    x.CosmeticName.Contains(item1) &&
-                    x.CosmeticSize.Contains(item2) &&
-                    x.SkinType.Contains(item3))
+                                x.CosmeticName.Contains(item1) &&
+                    x.CosmeticSize.Contains(item3) &&
+                    x.SkinType.Contains(item2))
                                 .Select(x => new
                                 {
                                     x.CosmeticId,
@@ -76,19 +76,19 @@ namespace Repository
             var res = await _context.CosmeticInformations
                 .Where(x =>
                     x.CosmeticName.Contains(item1) &&
-                    x.CosmeticSize.Contains(item2) &&
-                    x.SkinType.Contains(item3))
-                .Select(x => new
-                {
-                    x.CosmeticId,
-                    x.CosmeticName,
-                    x.SkinType,
-                    x.ExpirationDate,
-                    x.CosmeticSize,
-                    x.DollarPrice,
-                    x.CategoryId,
-                    CategoryName = x.Category.CategoryName
-                })
+                    x.CosmeticSize.Contains(item3) &&
+                    x.SkinType.Contains(item2))
+                //.Select(x => new
+                //{
+                //    x.CosmeticId,
+                //    x.CosmeticName,
+                //    x.SkinType,
+                //    x.ExpirationDate,
+                //    x.CosmeticSize,
+                //    x.DollarPrice,
+                //    x.CategoryId,
+                //    CategoryName = x.Category.CategoryName
+                //})
                 .OrderBy(x => x.CosmeticName)  // Ordering by CosmeticName first
                 .ThenBy(x => x.SkinType)       // Then ordering by SkinType
                 .ThenBy(x => x.CosmeticSize)   // Then ordering by CosmeticSize

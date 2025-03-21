@@ -180,6 +180,32 @@ namespace PresentationUI.Controllers
             return res != null ? View(res) : NotFound();
         }
 
+        // GET: CosmeticInformations/Details/5
+        public async Task<IActionResult> Details(string id)
+        {
+            if (string.IsNullOrEmpty(id))
+            {
+                return NotFound();
+            }
+
+            using var httpClient = new HttpClient();
+            await AddJwtTokenToRequestHeader(httpClient, HttpContext);
+
+            var response = await httpClient.GetAsync($"https://localhost:7162/api/{id}");
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return NotFound();
+            }
+
+            var res = await GetDeserializedResponseFromApi<CosmeticInformation>(response);
+
+            return res != null ? View(res) : NotFound();
+        }
+
+
+
+
         // POST: CosmeticInformations/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

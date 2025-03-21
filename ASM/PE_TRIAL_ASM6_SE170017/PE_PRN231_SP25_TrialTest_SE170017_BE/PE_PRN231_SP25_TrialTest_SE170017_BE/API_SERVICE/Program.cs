@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
 using Microsoft.OpenApi.Models;
 using Repository;
@@ -26,6 +27,7 @@ builder.Services.AddScoped<MainService>();
 builder.Services.AddScoped<AccountRepo>();
 builder.Services.AddScoped<CosInfoRepo>();
 builder.Services.AddScoped<CateRepo>();
+
 #region Config Cors
 builder.Services.AddCors(options =>
 {
@@ -42,14 +44,14 @@ builder.Services.AddCors(options =>
 
 #region ODATA
 var modelBuilder = new ODataConventionModelBuilder();
-//modelBuilder.EntityType<QuizResult>();
 modelBuilder.EntitySet<CosmeticInformation>("CosmeticInformation");
 
 builder.Services.AddControllers().AddOData(
     options => options.Select().Filter().OrderBy().Expand().Count().SetMaxTop(null).AddRouteComponents(
-        "odata",
+        "odata12312312",
         modelBuilder.GetEdmModel()));
 #endregion
+
 #region JWT config
 
 builder.Services.AddSwaggerGen(options =>
