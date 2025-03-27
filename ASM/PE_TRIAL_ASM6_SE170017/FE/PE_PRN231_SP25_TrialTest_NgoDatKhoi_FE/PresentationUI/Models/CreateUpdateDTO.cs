@@ -8,8 +8,6 @@ namespace PresentationUI.Models;
 
 public class CreateUpdateDTO
 {
-    public string CosmeticId { get; set; }
-
     [Required]
     [RegularExpression(@"^([A-Z][a-zA-Z0-9@#]*\s)*[A-Z][a-zA-Z0-9@#]*$",
         ErrorMessage = "Each word in CosmeticName must start with a capital letter and contain only letters, digits, spaces, @, or #.")]

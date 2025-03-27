@@ -28,6 +28,8 @@ namespace PresentationUI.Controllers
 
             return System.Text.Json.JsonSerializer.Deserialize<T>(await response.Content.ReadAsStringAsync(), options);
         }
+        
+        
         // GET: CosmeticInformations
         public async Task<IActionResult> Index()
         {

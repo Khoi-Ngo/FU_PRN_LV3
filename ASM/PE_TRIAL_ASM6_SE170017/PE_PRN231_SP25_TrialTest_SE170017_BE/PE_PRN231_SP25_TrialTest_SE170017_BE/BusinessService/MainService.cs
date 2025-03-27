@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Repository;
 using Repository.Models;
@@ -10,17 +11,22 @@ namespace BusinessService
 {
     public class MainService
     {
-        private readonly IHttpContextAccessor httpContextAccessor;
+        private readonly IConfiguration configuration;
         private readonly AccountRepo accountRepo;
         private readonly CateRepo cateRepo;
         private readonly CosInfoRepo cosInfoRepo;
 
-        public MainService(IHttpContextAccessor httpContextAccessor, AccountRepo accountRepo, CateRepo cateRepo, CosInfoRepo cosInfoRepo)
+        public MainService(IConfiguration configuration, AccountRepo accountRepo, CateRepo cateRepo, CosInfoRepo cosInfoRepo)
         {
-            this.httpContextAccessor = httpContextAccessor;
             this.accountRepo = accountRepo;
             this.cateRepo = cateRepo;
             this.cosInfoRepo = cosInfoRepo;
+            this.configuration = configuration;
+        }
+
+        public async Task<object?> GetViewBag()
+        {
+            return (await cateRepo.GetAllAsync()).Select(x => x.CategoryId).ToList();
         }
 
         public async Task CreateAsync(CosmeticInformation request)
@@ -63,6 +69,9 @@ namespace BusinessService
 
         public async Task UpdateAsync(CosmeticInformation request)
         {
+            //check exist
+            var check = await cosInfoRepo.GetByIdAsync2(request.CosmeticId);
+            if (check is null) throw new Exception("The updated data is not existed");
             await cosInfoRepo.UpdateAsync(request);
         }
 
@@ -71,6 +80,7 @@ namespace BusinessService
 
         public string GenerateAccessToken(SystemAccount user)
         {
+            var secretKey = configuration["JWT:secretkey"];
             //Claim attribute for the token
             List<Claim> claims = new List<Claim>
             {
@@ -83,7 +93,7 @@ namespace BusinessService
 
             };
             //get secretkey for jwt token
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("PE-PRN333SESE-JWTBearerSecretKey"));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
 
             //create credentials
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -98,19 +108,58 @@ namespace BusinessService
             return jwt;
         }
 
+
+        #endregion
+
+        #region increase the id in case the id is string and having no fields  to apply ordering by inserted time
+
+        public async Task<CosmeticInformation> GetRequestWithId(CosmeticInformation request)
+        {
+            string topEID = (await cosInfoRepo.GetTopE()).CosmeticId;
+
+            if (string.IsNullOrEmpty(topEID))
+            {
+                request.CosmeticId = "PL000001"; // Default 6 digits
+                return request;
+            }
+
+            //check the format of the existed data
+            string prefix = topEID.Substring(0, 2);
+            int checkNoOfDigit = topEID.Substring(2).Length;
+            int number = int.Parse(topEID.Substring(2));
+            int newKeySubFixNumber = number + 1;
+
+            if (newKeySubFixNumber == Math.Pow(10, checkNoOfDigit))
+            {
+                request.CosmeticId = prefix + newKeySubFixNumber.ToString();
+                return request;
+            }
+
+            //StringBuilder str = new StringBuilder(Convert.ToString(newKeySubFixNumber));
+            //while(str.Length < checkNoOfDigit)
+            //{
+            //    str.Insert(0, "0");
+            //}
+            //request.CosmeticId = str.ToString();
+            //return request;
+            // Format the new ID with leading zeros
+            request.CosmeticId = prefix + newKeySubFixNumber.ToString("D" + checkNoOfDigit);
+            return request;
+        }
+
+        #endregion
+
+
+        #region Search
         public async Task<object?> SearchAsync(string item1, string item2, string item3)
         {
             return await cosInfoRepo.SearchAsync(
-                item1 != null ? item1 : "",
-                item2 != null ? item2 : "",
-                item3 != null ? item3 : ""
+                item1 ?? "",
+                item2 ?? "",
+                item3 ?? ""
                 );
         }
 
-        public async Task<object?> GetViewBag()
-        {
-            return (await cateRepo.GetAllAsync()).Select(x => x.CategoryId).ToList();
-        }
 
         public async Task<object?> SearchAsync2(string item1, string item2, string item3)
         {
@@ -122,8 +171,6 @@ namespace BusinessService
 
             return response;
         }
-
-
 
         #endregion
     }

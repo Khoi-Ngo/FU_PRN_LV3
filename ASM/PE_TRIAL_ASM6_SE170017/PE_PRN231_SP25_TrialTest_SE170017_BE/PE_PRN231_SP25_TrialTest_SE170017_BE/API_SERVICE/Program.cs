@@ -17,16 +17,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<Sp25CosmeticsDBContext>(options =>
 {
-    options.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+    options.UseQueryTrackingBehavior(Microsoft.EntityFrameworkCore.QueryTrackingBehavior.NoTracking);
 });
-builder.Services.AddScoped<MainService>();
-builder.Services.AddScoped<AccountRepo>();
-builder.Services.AddScoped<CosInfoRepo>();
-builder.Services.AddScoped<CateRepo>();
+builder.Services.ConfigureAppServices();
+
 
 #region Config Cors
 builder.Services.AddCors(options =>
@@ -41,14 +38,16 @@ builder.Services.AddCors(options =>
         });
 });
 #endregion
-
+    
 #region ODATA
 var modelBuilder = new ODataConventionModelBuilder();
 modelBuilder.EntitySet<CosmeticInformation>("CosmeticInformation");
+modelBuilder.EntitySet<CosmeticCategory>("CosmeticCategory");
+
 
 builder.Services.AddControllers().AddOData(
     options => options.Select().Filter().OrderBy().Expand().Count().SetMaxTop(null).AddRouteComponents(
-        "odata12312312",
+        "odata",
         modelBuilder.GetEdmModel()));
 #endregion
 
@@ -100,7 +99,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
         ValidateIssuer = false,
         ValidateAudience = false,
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("PE-PRN333SESE-JWTBearerSecretKey")),
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:secretkey"])),
         ValidateLifetime = true,
         ClockSkew = TimeSpan.Zero
     };

@@ -16,28 +16,46 @@ namespace Repository
 
         public async Task<object> GetAllAsync2()
         {
+            //return await _context.CosmeticInformations
+
+            //    .Include(x => x.Category)
+            //    .OrderByDescending(x => x.CosmeticId).ToListAsync();
+
+            //.Select(x => new
+            //{
+            //    x.CosmeticId,
+            //    x.CosmeticName,
+            //    x.SkinType,
+            //    x.ExpirationDate,
+            //    x.CosmeticSize,
+            //    x.DollarPrice,
+            //    x.CategoryId,
+            //    x.Category.CategoryName
+            //})
+
             return await _context.CosmeticInformations
-                .Select(x => new
-                {
-                    x.CosmeticId,
-                    x.CosmeticName,
-                    x.SkinType,
-                    x.ExpirationDate,
-                    x.CosmeticSize,
-                    x.DollarPrice,
-                    x.CategoryId,
-                    CategoryName = x.Category.CategoryName
-                })
-                .OrderByDescending(x => x.CosmeticId).ToListAsync();
+    .Include(x => x.Category)
+    .OrderByDescending(x => Convert.ToInt32(x.CosmeticId.Substring(2))) // Extract number and sort
+    .ToListAsync();
         }
 
-        //return await _context.CosmeticInformations.Include(x => x.Category.CategoryName).ToListAsync();
+
+
+ 
 
 
         public async Task<CosmeticInformation> GetByIdAsync2(string id)
         {
             return await _context.CosmeticInformations.Include(x => x.Category).FirstOrDefaultAsync(x => x.CosmeticId == id);
 
+        }
+
+        public async Task<CosmeticInformation> GetTopE()
+        {
+            return await _context.CosmeticInformations
+        //.OrderByDescending(x => x.CosmeticId)
+        .OrderByDescending(x => Convert.ToInt32(x.CosmeticId.Substring(2)))
+                .FirstOrDefaultAsync();
         }
 
         public async Task<object?> SearchAsync(string item1, string item2, string item3)
@@ -58,6 +76,7 @@ namespace Repository
                                     x.CategoryId,
                                     CategoryName = x.Category.CategoryName
                                 })
+                                .OrderByDescending(x => x.CosmeticId)
                 .GroupBy(x => new { x.CosmeticName, x.CosmeticSize, x.SkinType })
                 .Select(group => new
                 {
@@ -78,17 +97,7 @@ namespace Repository
                     x.CosmeticName.Contains(item1) &&
                     x.CosmeticSize.Contains(item3) &&
                     x.SkinType.Contains(item2))
-                //.Select(x => new
-                //{
-                //    x.CosmeticId,
-                //    x.CosmeticName,
-                //    x.SkinType,
-                //    x.ExpirationDate,
-                //    x.CosmeticSize,
-                //    x.DollarPrice,
-                //    x.CategoryId,
-                //    CategoryName = x.Category.CategoryName
-                //})
+                .Include(x => x.Category)
                 .OrderBy(x => x.CosmeticName)  // Ordering by CosmeticName first
                 .ThenBy(x => x.SkinType)       // Then ordering by SkinType
                 .ThenBy(x => x.CosmeticSize)   // Then ordering by CosmeticSize

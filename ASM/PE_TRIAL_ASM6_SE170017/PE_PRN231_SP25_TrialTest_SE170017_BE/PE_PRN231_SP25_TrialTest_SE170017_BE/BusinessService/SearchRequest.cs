@@ -8,8 +8,8 @@ namespace BusinessService
 {
     public class SearchRequest
     {
-            public string Item1 { get; set; }
-            public string Item2 { get; set; }
-            public string Item3 { get; set; }
+        public string Item1 { get; set; } = string.Empty;
+        public string Item2 { get; set; } = string.Empty;
+        public string Item3 { get; set; } = string.Empty;
     }
 }

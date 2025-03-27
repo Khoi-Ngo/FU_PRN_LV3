@@ -43,17 +43,17 @@ namespace API_SERVICE.Controllers
 
         [HttpPut]
         [PermissionAuthorize(1)]
-        public async Task<IActionResult> UpdateAsync([FromBody] CreateUpdateDTO request)
+        public async Task<IActionResult> UpdateAsync([FromBody] CosmeticInformation request)
         {
-            await mainService.UpdateAsync(MapToEntity<CreateUpdateDTO, CosmeticInformation>(request));
+            await mainService.UpdateAsync(request);
             return Ok();
         }
 
         [HttpPost]
         [PermissionAuthorize(1)]
-        public async Task<IActionResult> CreateAsync([FromBody] CreateUpdateDTO request)
+        public async Task<IActionResult> CreateAsync([FromBody] CosmeticInformation request)
         {
-            await mainService.CreateAsync(MapToEntity<CreateUpdateDTO, CosmeticInformation>(request));
+            await mainService.CreateAsync(await mainService.GetRequestWithId(request));
             return Ok();
         }
 
@@ -75,37 +75,27 @@ namespace API_SERVICE.Controllers
 
 
 
-        private TEntity MapToEntity<TDTO, TEntity>(TDTO dto) where TEntity : new()
-        {
-            if (dto == null) return default;
+        //private TEntity MapToEntity<TDTO, TEntity>(TDTO dto) where TEntity : new()
+        //{
+        //    if (dto == null) return default;
 
-            var entity = new TEntity();
-            var dtoProperties = typeof(TDTO).GetProperties();
-            var entityProperties = typeof(TEntity).GetProperties().ToDictionary(p => p.Name);
+        //    var entity = new TEntity();
+        //    var dtoProperties = typeof(TDTO).GetProperties();
+        //    var entityProperties = typeof(TEntity).GetProperties().ToDictionary(p => p.Name);
 
-            foreach (var dtoProp in dtoProperties)
-            {
-                if (entityProperties.TryGetValue(dtoProp.Name, out var entityProp) &&
-                    entityProp.CanWrite &&
-                    entityProp.PropertyType.IsAssignableFrom(dtoProp.PropertyType))
-                {
-                    entityProp.SetValue(entity, dtoProp.GetValue(dto));
-                }
-            }
+        //    foreach (var dtoProp in dtoProperties)
+        //    {
+        //        if (entityProperties.TryGetValue(dtoProp.Name, out var entityProp) &&
+        //            entityProp.CanWrite &&
+        //            entityProp.PropertyType.IsAssignableFrom(dtoProp.PropertyType))
+        //        {
+        //            entityProp.SetValue(entity, dtoProp.GetValue(dto));
+        //        }
+        //    }
 
-            return entity;
-        }
+        //    return entity;
+        //}
+  
+    
     }
-    //[HttpGet("{id}")]
-    //[PermissionAuthorize(1)]
-    //[EnableQuery]
-    //public async Task<IActionResult> GetDetailAsync(int id) => Ok(await mainService.GetDetailAsync(id));
-
-    //[HttpDelete("{id}")]
-    //[PermissionAuthorize(1)]
-    //public async Task<IActionResult> DeleteAsync(int id)
-    //{
-    //    await mainService.DeleteAsync(id);
-    //    return Ok();
-    //}
 }
