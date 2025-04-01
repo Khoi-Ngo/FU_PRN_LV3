@@ -5,7 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using Pre_maritalCounSeling.Common.Models.Auth;
 using Pre_maritalCounSeling.Common.Util;
 using Pre_maritalCounSeling.DAL.Entities;
-using Pre_maritalCounSeling.DAL.Infrastructure;
+using Pre_maritalCounSeling.DAL.Repositories.UserRepo;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
@@ -19,11 +19,11 @@ namespace Pre_maritalCounSeling.BAL.Auth
     {
         #region INIT
         private readonly IConfiguration _configuration;
-        private readonly UnitOfWork _unitOfWork;
+        private readonly UserRepository _userRepository;
         private readonly IHttpContextAccessor _httpContextAccessor;
-        public JWTService(ILogger<JWTService> logger, IConfiguration configuration, UnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor)
+        public JWTService(ILogger<JWTService> logger, IConfiguration configuration, UserRepository userRepository, IHttpContextAccessor httpContextAccessor)
         {
-            _unitOfWork = unitOfWork;
+            _userRepository = userRepository;
             _configuration = configuration;
             _httpContextAccessor = httpContextAccessor;
         }
@@ -96,7 +96,7 @@ namespace Pre_maritalCounSeling.BAL.Auth
         {
             var principal = GetPrincipalFromExpiredToken(request.AccessToken);
             string username = UserUtil.GetValueFromPrincipal(principal, "UserName").ToString();
-            var user = await _unitOfWork.UserRepository.GetByUserNameAsync(username);
+            var user = await _userRepository.GetByUserNameAsync(username);
             //validate user token information
             //TODO: check expiryDateTime there is conflict insert datetime with read datetime
             if (user.RefreshToken != request.RefreshToken) throw new Exception("Invalid client request");
@@ -104,7 +104,7 @@ namespace Pre_maritalCounSeling.BAL.Auth
             string newRefreshToken = GenerateRefreshToken();
             user.RefreshToken = newRefreshToken;
             user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
-            await _unitOfWork.UserRepository.UpdateAsync(user);
+            await _userRepository.UpdateAsync(user);
             //return refresh response
             return new AuthenticatedResponse
             {
@@ -118,7 +118,7 @@ namespace Pre_maritalCounSeling.BAL.Auth
 
         public async Task HandleRevoke()
         {
-            await _unitOfWork.UserRepository.HandleRevokeTokenUser(
+            await _userRepository.HandleRevokeTokenUser(
                 _httpContextAccessor.HttpContext.User.Claims.FirstOrDefault(c => c.Type == "UserName").Value);
         }
 

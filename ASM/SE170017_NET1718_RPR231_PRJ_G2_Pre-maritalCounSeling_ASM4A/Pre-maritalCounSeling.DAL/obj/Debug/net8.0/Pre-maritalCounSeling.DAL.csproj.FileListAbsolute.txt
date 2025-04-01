@@ -41,3 +41,4 @@ D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.DAL\obj\Debug\net8.0\Pre-maritalCounSeling.DAL.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.DAL\obj\Debug\net8.0\Pre-maritalCounSeling.DAL.genruntimeconfig.cache
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.DAL\obj\Debug\net8.0\ref\Pre-maritalCounSeling.DAL.dll
+D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.DAL\obj\Debug\net8.0\Pre-maritalCounSeling.DAL.sourcelink.json
