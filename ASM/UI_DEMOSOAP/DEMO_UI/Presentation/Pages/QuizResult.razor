@@ -1,0 +1,163 @@
+﻿// Pages/QuizResults.razor
+@page "/quizresults"
+@inject QuizResultService QuizService
+@inject NavigationManager Navigation
+
+<h3>Quiz Results</h3>
+
+@if (quizResults == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="mb-3">
+        <input @bind="searchQzCode" placeholder="Quiz Code" class="form-control d-inline-block w-auto" />
+        <input @bind="searchSugContent" placeholder="Suggestion Content" class="form-control d-inline-block w-auto" />
+        <input @bind="searchFeedback" placeholder="Feedback" class="form-control d-inline-block w-auto" />
+        <button @onclick="Search" class="btn btn-primary">Search</button>
+        <button @onclick="() => ShowCreate = true" class="btn btn-success">Create New</button>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Score</th>
+                <th>Quiz ID</th>
+                <th>User ID</th>
+                <th>Code</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var result in quizResults)
+            {
+                <tr>
+                    <td>@result.Id</td>
+                    <td>@result.Score</td>
+                    <td>@result.QuizId</td>
+                    <td>@result.UserId</td>
+                    <td>@result.QuizResultCode</td>
+                    <td>
+                        <button @onclick="() => Edit(result)" class="btn btn-primary btn-sm">Edit</button>
+                        <button @onclick="() => Delete(result.Id)" class="btn btn-danger btn-sm">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (ShowCreate || SelectedResult != null)
+    {
+        <div class="modal" style="display:block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">@(SelectedResult == null ? "Create" : "Edit") Quiz Result</h5>
+                    </div>
+                    <div class="modal-body">
+                        <EditForm Model="@(SelectedResult ?? newResult)" OnValidSubmit="Save">
+                            <DataAnnotationsValidator />
+                            <ValidationSummary />
+                            <div class="form-group">
+                                <label>Score</label>
+                                <InputNumber @bind-Value="@(SelectedResult != null ? SelectedResult.Score : newResult.Score)" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label>Quiz ID</label>
+                                <InputNumber @bind-Value="@(SelectedResult != null ? SelectedResult.QuizId : newResult.QuizId)" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label>User ID</label>
+                                <InputNumber @bind-Value="@(SelectedResult != null ? SelectedResult.UserId : newResult.UserId)" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label>Feedback</label>
+                                <InputText @bind-Value="@(SelectedResult != null ? SelectedResult.FeedBack : newResult.FeedBack)" class="form-control" />
+                            </div>
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <button @onclick="Cancel" class="btn btn-secondary">Cancel</button>
+                        </EditForm>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="mt-3">
+        <input @bind="chatMessage" class="form-control d-inline-block w-50" placeholder="Ask the chatbot..." />
+        <button @onclick="GetChatResponse" class="btn btn-info">Send</button>
+        @if (!string.IsNullOrEmpty(chatResponse))
+        {
+            <p class="mt-2">Chatbot: @chatResponse</p>
+        }
+    </div>
+}
+
+@code {
+    private List<QuizResultModel> quizResults;
+    private QuizResultModel SelectedResult;
+    private QuizResultCreateModel newResult = new();
+    private bool ShowCreate = false;
+    private string searchQzCode = "";
+    private string searchSugContent = "";
+    private string searchFeedback = "";
+    private string chatMessage = "";
+    private string chatResponse = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadResults();
+    }
+
+    private async Task LoadResults()
+    {
+        quizResults = await QuizService.GetAllAsync();
+    }
+
+    private async Task Search()
+    {
+        quizResults = await QuizService.SearchAsync(searchQzCode, searchSugContent, searchFeedback);
+    }
+
+    private void Edit(QuizResultModel result)
+    {
+        SelectedResult = result;
+        ShowCreate = false;
+    }
+
+    private async Task Save()
+    {
+        if (SelectedResult != null)
+        {
+            await QuizService.UpdateAsync(SelectedResult);
+        }
+        else
+        {
+            await QuizService.CreateAsync(newResult);
+            newResult = new();
+        }
+        SelectedResult = null;
+        ShowCreate = false;
+        await LoadResults();
+    }
+
+    private async Task Delete(long id)
+    {
+        await QuizService.DeleteAsync(id);
+        await LoadResults();
+    }
+
+    private void Cancel()
+    {
+        SelectedResult = null;
+        ShowCreate = false;
+    }
+
+    private async Task GetChatResponse()
+    {
+        chatResponse = await QuizService.GetChatBotResponseAsync(chatMessage);
+        chatMessage = "";
+    }
+}

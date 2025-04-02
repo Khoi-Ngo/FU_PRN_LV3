@@ -1,0 +1,6 @@
+@APISERVICESOAP_HostAddress = http://localhost:5245
+
+GET {{APISERVICESOAP_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
