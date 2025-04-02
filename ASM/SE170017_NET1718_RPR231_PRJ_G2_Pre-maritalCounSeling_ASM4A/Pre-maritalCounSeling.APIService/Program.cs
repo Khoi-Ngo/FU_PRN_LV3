@@ -1,5 +1,7 @@
 using Pre_maritalCounSeling.APIService.GraphQLs;
-using Pre_maritalCounSeling.BAL;
+using Pre_maritalCounSeling.BAL.ServiceQuiz;
+using Pre_maritalCounSeling.DAL.Entities;
+using Pre_maritalCounSeling.DAL.Repositories;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,11 +9,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHttpContextAccessor();
-builder.Services.ConfigureAppServices();
+
+builder.Services.AddScoped<IQuizResultService, QuizResultService>();
+
+builder.Services.AddHttpClient<QuizResultMutation>(client =>
+{
+    client.BaseAddress = new Uri("http://localhost:8080/");
+});
+builder.Services.AddScoped<QuizResultMutation>();
 #region Config Cors
 builder.Services.AddCors(options =>
 {
@@ -28,8 +35,14 @@ builder.Services.AddCors(options =>
 
 
 #region GRAPQL region add all query and mutation service
-builder.Services.AddGraphQLServer().AddQueryType<QuizResultQuery>().BindRuntimeType<DateTime, DateTimeType>();
+
+builder.Services.AddGraphQLServer().AddQueryType<QuizResultQuery>().AddMutationType<QuizResultMutation>().BindRuntimeType<DateTime, DateTimeType>();
+
 #endregion
+
+
+
+
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;

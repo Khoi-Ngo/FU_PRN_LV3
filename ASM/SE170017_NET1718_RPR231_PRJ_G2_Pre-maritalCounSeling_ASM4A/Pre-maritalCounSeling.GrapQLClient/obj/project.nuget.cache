@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oUrTczbZqbw=",
+  "dgSpecHash": "nzPe1Yy+Jqk=",
   "success": true,
-  "projectFilePath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\Pre-maritalCounSeling.GrapQLClient.csproj",
+  "projectFilePath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\Pre_maritalCounSeling.GrapQLClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khoin\\.nuget\\packages\\graphql\\8.4.1\\graphql.8.4.1.nupkg.sha512",
     "C:\\Users\\khoin\\.nuget\\packages\\graphql-parser\\9.5.0\\graphql-parser.9.5.0.nupkg.sha512",

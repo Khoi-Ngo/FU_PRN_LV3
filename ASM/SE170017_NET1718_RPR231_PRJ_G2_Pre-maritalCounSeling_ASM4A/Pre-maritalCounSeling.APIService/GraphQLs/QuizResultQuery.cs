@@ -1,5 +1,4 @@
 ﻿using Pre_maritalCounSeling.BAL.ServiceQuiz;
-using Pre_maritalCounSeling.BAL.ServiceUser;
 using Pre_maritalCounSeling.DAL.Entities;
 
 namespace Pre_maritalCounSeling.APIService.GraphQLs
@@ -21,17 +20,23 @@ namespace Pre_maritalCounSeling.APIService.GraphQLs
             }
             catch (Exception ex)
             {
-                var temp = ex;
-                throw new Exception("Cannot query : " + ex.Message);
+                Console.WriteLine("Cannot query : " + ex.Message);
             }
+            return new List<QuizResult> { };
         }
 
-       //TODO: Create
+        public async Task<QuizResult> GetQuizResultsDetailSimplyAsync(string id)
+        {
+            try
+            {
+                return await _quizResultService.GetQuizResultSimplyAsync(long.Parse(id));
 
-
-        //TODO: Detail
-
-
-        //TODO: Update
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Cannot query : " + ex.Message);
+            }
+            return new QuizResult();
+        }
     }
 }

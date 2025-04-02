@@ -1,88 +1,113 @@
-﻿using Microsoft.AspNetCore.Http;
-using Pre_maritalCounSeling.Common.Util;
-using Pre_maritalCounSeling.DAL.Entities;
-using Pre_maritalCounSeling.DAL.Infrastructure;
+﻿using Pre_maritalCounSeling.DAL.Entities;
 
 namespace Pre_maritalCounSeling.BAL.ServiceQuiz
 {
     public interface IQuizResultService
     {
-        Task DeleteQuizResultAsync(long id);
-        Task<List<QuizResult>> GetQuizResultsAsync();
-        Task<QuizResult> GetQuizResultAsync(long id);
-        Task<List<QuizResult>> GetQuizResultsSimplyAsync();
         Task<QuizResult> GetQuizResultSimplyAsync(long id);
-        Task DeleteQuizResultSimplyAsync(long id);
-        Task CreateQuizResultSimplyAsync(QuizResult request);
-        Task UpdateQuizResultSimplyAsync(QuizResult request);
+        Task<List<QuizResult>> GetQuizResultsSimplyAsync();
+        Task<bool> DeleteQuizResultSimplyAsync(long id);
+        Task<int> CreateQuizResultSimplyAsync(QuizResult request);
+        Task<int> UpdateQuizResultSimplyAsync(QuizResult request);
+        Task<List<User>> GetViewBagUser();
+        Task<List<Quiz>> GetViewBagQuiz();
     }
     public class QuizResultService : IQuizResultService
     {
-        private readonly UnitOfWork _unitOfWork;
-        private readonly IHttpContextAccessor _httpContextAccessor;
-        public QuizResultService(UnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor)
+        private readonly QuizRepository _quizRepository;
+        private readonly QuizResultRepository _quizResultRepository;
+        private readonly UserRepository _userRepository;
+
+        public QuizResultService()
         {
-            _unitOfWork = unitOfWork;
-            _httpContextAccessor = httpContextAccessor;
+            _quizRepository ??= new QuizRepository();
+            _quizResultRepository ??= new QuizResultRepository();
+            _userRepository ??= new UserRepository();
         }
-        public async Task DeleteQuizResultAsync(long id)
+
+        public async Task<int> CreateQuizResultSimplyAsync(QuizResult request)
         {
-            var userRole = AppUtil.GetUserRoleFromUserContext(_httpContextAccessor);
-            var quizResult = (await _unitOfWork.QuizResultRepository.GetByIdAsync(id));
-            if (userRole.Equals("ADMIN") || quizResult.UserId == AppUtil.GetUserIdFromUserContext(_httpContextAccessor))
+
+            return await _quizResultRepository.CreateAsync(request);
+        }
+
+        public async Task<bool> DeleteQuizResultSimplyAsync(long id)
+        {
+            //get if any
+            var deletedE = await _quizResultRepository.GetByIdAsync(id);
+            if (deletedE == null)
             {
-                await _unitOfWork.QuizResultRepository.RemoveAsync(quizResult);
-                return;
+                throw new Exception("There is no Quiz Result found");
             }
-            throw new Exception("Unauthorized access");
-        }
-
-        public async Task<List<QuizResult>> GetQuizResultsAsync()
-        {
-            var userRole = AppUtil.GetUserRoleFromUserContext(_httpContextAccessor);
-            if (userRole.Equals("ADMIN")) return await _unitOfWork.QuizResultRepository.GetAllAsync();
-            if (userRole.Equals("CUSTOMER")) return (await _unitOfWork.QuizResultRepository.GetAllAsync()).Where(qz => qz.UserId == AppUtil.GetUserIdFromUserContext(_httpContextAccessor)).ToList();
-            throw new Exception("Unauthorized access / Cannot find the quiz results");
-        }
-
-        public async Task<List<QuizResult>> GetQuizResultsSimplyAsync()
-        {
-
-            var check = await _unitOfWork.QuizResultRepository.GetAllAsync();
-            return check;
-
-        }
-
-
-        public async Task<QuizResult> GetQuizResultAsync(long id)
-        {
-            var userRole = AppUtil.GetUserRoleFromUserContext(_httpContextAccessor);
-            var quizResult = await _unitOfWork.QuizResultRepository.GetByIdAsync(id);
-            if (quizResult == null) throw new Exception("Quiz result not found");
-            if (userRole.Equals("ADMIN")) return quizResult;
-            if (userRole.Equals("CUSTOMER")) return quizResult.UserId == AppUtil.GetUserIdFromUserContext(_httpContextAccessor) ? quizResult : throw new Exception("Unauthorized access / Cannot find the quiz result");
-            throw new Exception("Unauthorized access / Cannot find the quiz result");
+            return await _quizResultRepository.RemoveAsync(deletedE);
         }
 
         public async Task<QuizResult> GetQuizResultSimplyAsync(long id)
         {
-            return await _unitOfWork.QuizResultRepository.GetByIdAsync(id);
+            return await _quizResultRepository.GetByIdAsync2(id);
         }
 
-        public async Task DeleteQuizResultSimplyAsync(long id)
+        public async Task<List<QuizResult>> GetQuizResultsSimplyAsync()
         {
-            var quizResult = (await _unitOfWork.QuizResultRepository.GetByIdAsync(id));
-            await _unitOfWork.QuizResultRepository.RemoveAsync(quizResult);
+            return await _quizResultRepository.GetAllAsync2();
         }
 
-        public async Task CreateQuizResultSimplyAsync(QuizResult request)
+        public async Task<List<Quiz>> GetViewBagQuiz()
         {
-            await _unitOfWork.QuizResultRepository.CreateAsync(request);
+            return await _quizRepository.GetAllAsync();
         }
 
-        public Task UpdateQuizResultSimplyAsync(QuizResult request)
+        public async Task<List<User>> GetViewBagUser()
         {
-            throw new NotImplementedException();
+            return await _userRepository.GetAllAsync();
         }
+
+        public async Task<int> UpdateQuizResultSimplyAsync(QuizResult request)
+        {
+            //get if any
+            var updatedE = await _quizResultRepository.GetByIdAsync(request.Id);
+            if (updatedE == null)
+            {
+                throw new Exception("There is no Quiz Result found");
+            }
+            //setting new fields
+
+            //SCORE
+            updatedE.Score = request.Score;
+
+            //QUIZ ID
+            updatedE.QuizId = request.QuizId;
+            //USER ID
+            updatedE.UserId = request.UserId;
+            //QRCODE optional
+            updatedE.QuizResultCode = !string.IsNullOrEmpty(request.QuizResultCode) ? request.QuizResultCode : updatedE.QuizResultCode;
+            //TIMECOMPLETED optional
+            updatedE.TimeCompleted = request.TimeCompleted == null ? updatedE.TimeCompleted : request.TimeCompleted;
+
+            //ATTEMP TIME optional
+            updatedE.AttemptTime = request.AttemptTime == null ? updatedE.AttemptTime : request.AttemptTime;
+            //DO HAVE FEEDBACK
+            updatedE.DoHaveFeedback = request.DoHaveFeedback == null ? updatedE.DoHaveFeedback : request.DoHaveFeedback;
+            //FEEDBACK
+            updatedE.FeedBack = !string.IsNullOrEmpty(request.FeedBack) ? request.FeedBack : updatedE.FeedBack;
+            //SUGGESTION CONTENT
+            updatedE.SuggestionContent = !string.IsNullOrEmpty(request.SuggestionContent) ? request.SuggestionContent : updatedE.SuggestionContent;
+
+            //USER ANSWER DATA
+            updatedE.UserAnswerData = !string.IsNullOrEmpty(request.UserAnswerData) ? request.UserAnswerData : updatedE.UserAnswerData;
+
+            //REC ANSWER DATA
+            updatedE.RecommendedAnswerData = !string.IsNullOrEmpty(request.RecommendedAnswerData) ? request.RecommendedAnswerData : updatedE.RecommendedAnswerData;
+
+            //MODIFY AT
+            updatedE.ModifiedAt = DateTime.Now;
+
+
+            //continue to save into the database
+            return await _quizResultRepository.UpdateAsync(updatedE);
+        }
+
+
+
     }
 }

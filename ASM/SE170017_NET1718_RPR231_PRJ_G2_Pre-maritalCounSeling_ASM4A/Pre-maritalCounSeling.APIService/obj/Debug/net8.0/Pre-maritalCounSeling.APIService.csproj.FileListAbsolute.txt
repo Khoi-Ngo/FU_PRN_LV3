@@ -83,7 +83,6 @@ D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\System.Web.WebPages.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
@@ -151,8 +150,6 @@ D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Pre-maritalCounSeling.BAL.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Pre-maritalCounSeling.DAL.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Pre_maritalCounSeling.Common.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Pre-maritalCounSeling.BAL.pdb
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Pre_maritalCounSeling.Common.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\bin\Debug\net8.0\Pre-maritalCounSeling.DAL.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.APIService\obj\Debug\net8.0\Pre-maritalCounSeling.APIService.sourcelink.json

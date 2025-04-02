@@ -37,8 +37,6 @@ D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\bin\Debug\net8.0\Pre-maritalCounSeling.BAL.dll
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\bin\Debug\net8.0\Pre-maritalCounSeling.BAL.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\bin\Debug\net8.0\Pre-maritalCounSeling.DAL.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\bin\Debug\net8.0\Pre_maritalCounSeling.Common.dll
-D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\bin\Debug\net8.0\Pre_maritalCounSeling.Common.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\bin\Debug\net8.0\Pre-maritalCounSeling.DAL.pdb
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\obj\Debug\net8.0\Pre-maritalCounSeling.BAL.csproj.AssemblyReference.cache
 D:\FPT_UNI\SP25\PRN_LV3\ASM\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\Pre-maritalCounSeling.BAL\obj\Debug\net8.0\Pre-maritalCounSeling.BAL.GeneratedMSBuildEditorConfig.editorconfig

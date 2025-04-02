@@ -1,0 +1,61 @@
+﻿@page "/QuizResults/Detail/{id}"
+@inject HttpClient httpClient
+@inject GraphQL.GraphQLConsumer grapQLConsumer
+@using Presentation.GraphQL
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 rounded-4" style="background-color: #f8f9fa;">
+        <h3 class="mb-4 text-center text-primary fw-bold">Quiz Result Detail</h3>
+
+        @if (quizResult == null)
+        {
+            <div class="text-center text-muted">
+                <p>Loading...</p>
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="@quizResult.QuizImg" alt="Quiz Image" class="img-fluid rounded border border-secondary" />
+                </div>
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>ID:</strong> @quizResult.Id</li>
+                        <li class="list-group-item"><strong>Score:</strong> @quizResult.Score</li>
+                        <li class="list-group-item"><strong>Quiz ID:</strong> @quizResult.QuizId</li>
+                        <li class="list-group-item"><strong>User ID:</strong> @quizResult.UserId</li>
+                        <li class="list-group-item"><strong>Result Code:</strong> @quizResult.QuizResultCode</li>
+                        <li class="list-group-item"><strong>Time Completed:</strong> @quizResult.TimeCompleted</li>
+                        <li class="list-group-item"><strong>Attempt Time:</strong> @quizResult.AttemptTime</li>
+                        <li class="list-group-item"><strong>Suggestion:</strong> @quizResult.SuggestionContent</li>
+                        <li class="list-group-item"><strong>Feedback:</strong> @quizResult.FeedBack</li>
+                    </ul>
+                    <div class="mt-3 text-center">
+                        <a href="/QuizResults/QuizResultList" class="btn btn-secondary shadow-sm">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public string Id { get; set; }
+    private QuizResult? quizResult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            quizResult = await grapQLConsumer.GetByIdAsync(Id);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading quiz result: {ex.Message}");
+        }
+    }
+}

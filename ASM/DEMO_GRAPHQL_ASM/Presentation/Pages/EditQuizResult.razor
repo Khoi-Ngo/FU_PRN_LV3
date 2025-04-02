@@ -1,0 +1,122 @@
+﻿@page "/QuizResults/Edit/{Id:long}"
+@inject GraphQL.GraphQLConsumer grapQLConsumer
+@using Presentation.GraphQL
+@inject NavigationManager NavigationManager
+
+<div class="container mt-5">
+    <div class="card shadow-lg p-4 rounded-4" style="background-color: #f8f9fa;">
+        <h3 class="mb-4 text-center text-primary fw-bold">Edit Quiz Result</h3>
+
+        @if (quizResult == null)
+        {
+            <div class="text-center text-muted">
+                <p>Loading...</p>
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        }
+        else
+        {
+            <EditForm Model="@quizResult" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Score</label>
+                    <InputNumber @bind-Value="quizResult.Score" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Quiz ID</label>
+                    <InputNumber @bind-Value="quizResult.QuizId" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">User ID</label>
+                    <InputNumber @bind-Value="quizResult.UserId" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Result Code</label>
+                    <InputText @bind-Value="quizResult.QuizResultCode" class="form-control" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Time Completed</label>
+                    <InputNumber @bind-Value="quizResult.TimeCompleted" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">User Answers</label>
+                    <InputTextArea @bind-Value="quizResult.UserAnswerData" class="form-control" rows="3" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Recommended Answers</label>
+                    <InputTextArea @bind-Value="quizResult.RecommendedAnswerData" class="form-control" rows="3" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Feedback</label>
+                    <InputTextArea @bind-Value="quizResult.FeedBack" class="form-control" rows="3" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-semibold">Suggestions</label>
+                    <InputTextArea @bind-Value="quizResult.SuggestionContent" class="form-control" rows="3" />
+                </div>
+
+                <div class="d-flex justify-content-between mt-4">
+                    <button type="submit" class="btn btn-primary shadow-sm px-4 py-2 rounded-pill">
+                        <i class="bi bi-save"></i> Update
+                    </button>
+                    <a href="/QuizResults/QuizResultList" class="btn btn-secondary shadow-sm px-4 py-2 rounded-pill">
+                        <i class="bi bi-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </EditForm>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public long Id { get; set; }
+
+    private QuizResult? quizResult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            quizResult = await grapQLConsumer.GetByIdAsync(Id.ToString());
+            if (quizResult == null)
+            {
+                NavigationManager.NavigateTo("/QuizResults/QuizResultList");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error loading quiz result: {ex.Message}");
+            NavigationManager.NavigateTo("/QuizResults/QuizResultList");
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            if (quizResult != null)
+            {
+                await grapQLConsumer.UpdateQuizResultAsync(quizResult);
+                NavigationManager.NavigateTo("/QuizResults/QuizResultList");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error updating quiz result: {ex.Message}");
+            // You might want to add error handling UI here
+        }
+    }
+}

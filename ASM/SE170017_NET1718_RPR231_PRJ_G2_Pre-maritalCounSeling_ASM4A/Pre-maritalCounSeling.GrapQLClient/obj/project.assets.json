@@ -2356,9 +2356,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\Pre-maritalCounSeling.GrapQLClient.csproj",
-      "projectName": "Pre-maritalCounSeling.GrapQLClient",
-      "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\Pre-maritalCounSeling.GrapQLClient.csproj",
+      "projectUniqueName": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\Pre_maritalCounSeling.GrapQLClient.csproj",
+      "projectName": "Pre_maritalCounSeling.GrapQLClient",
+      "projectPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\Pre_maritalCounSeling.GrapQLClient.csproj",
       "packagesPath": "C:\\Users\\khoin\\.nuget\\packages\\",
       "outputPath": "D:\\FPT_UNI\\SP25\\PRN_LV3\\ASM\\SE170017_NET1718_RPR231_PRJ_G2_Pre-maritalCounSeling_ASM4A\\Pre-maritalCounSeling.GrapQLClient\\obj\\",
       "projectStyle": "PackageReference",

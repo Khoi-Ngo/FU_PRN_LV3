@@ -3,11 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Pre-maritalCounSeling.APIService\\Pre-maritalCounSeling.APIService.csproj",
+        "Path": "Pre-maritalCounSeling.APIService\\Pre_maritalCounSeling.APIService.csproj",
         "Action": "Start"
       },
       {
-        "Path": "Pre-maritalCounSeling.GrapQLClient\\Pre-maritalCounSeling.GrapQLClient.csproj",
+        "Path": "Pre-maritalCounSeling.GrapQLClient\\Pre_maritalCounSeling.GrapQLClient.csproj",
         "Action": "Start"
       }
     ]
