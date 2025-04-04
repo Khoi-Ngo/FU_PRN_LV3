@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/QuizResult",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7114
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/QuizResult",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Quiz",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7125
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Quiz",
+      "UpstreamHttpMethod": [ "POST", "PUT", "GET" ]
+    }
+  ]
+}
