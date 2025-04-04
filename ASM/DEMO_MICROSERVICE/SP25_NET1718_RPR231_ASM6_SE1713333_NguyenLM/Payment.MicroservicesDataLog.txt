@@ -1,0 +1,1 @@
+[4/3/2025 1:02:01 AM] PUBLISH data to RabbitMQ.paymentQueue: {"PaymentId":6,"PaymentDetailId":1,"PaymentMethod":"Credit Card","Amount":95,"PaymentDate":"2025-04-02T17:40:34.4","Status":"Completed","TransactionId":"TXN006","PaymentReference":"REF006","ProcessedBy":"Staff","Remarks":"Paid via Visa","PaymentDetail":null}
